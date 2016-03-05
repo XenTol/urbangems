@@ -75,7 +75,11 @@ var app = {
         var tags = ""
         counter = counter + 1;
         for(i = 0; i < counter; i++){
-            tags = tags + "<img src='" + obj['city_hall'][i]['uri'] + "' height=100 width=100 />";
+            //tags = tags + "<img src='" + obj['city_hall'][i]['uri'] + "' height=100 width=100 />";
+            tags = tags +"<a href='#'>" +
+            "<img class='thumb' src=" + obj['city_hall'][i]['uri'] + " width=100 height=100 />" +
+            "<img class='big' src=" + obj['city_hall'][i]['uri'] + " width=200 height=200 />" +
+            "</a>"
         }
         document.getElementById("pictureslider").innerHTML = tags;
       },
@@ -84,7 +88,8 @@ var app = {
       },
       {
         quality: 50,
-        destinationType: Camera.DestinationType.FILE_URI
+        destinationType: Camera.DestinationType.FILE_URI,
+        correctOrientation: true
       });
     }
 };

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document><Folder><name>BowFalls</name>
+<Schema name="BowFalls" id="BowFalls">
+	<SimpleField name="Name" type="string"></SimpleField>
+	<SimpleField name="Description" type="string"></SimpleField>
+	<SimpleField name="NAME2" type="string"></SimpleField>
+</Schema>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#BowFalls">
+		<SimpleData name="NAME2">Bow Falls</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.560099033258211,51.166005197104603 -115.560177774824538,51.166039619834734 -115.560397058877228,51.166259769660897 -115.560499792165032,51.166378122733512 -115.560575150991383,51.166521229769046 -115.561055064282229,51.167129304805847 -115.561389612426623,51.167493050227229 -115.561472404867288,51.167611157134587 -115.561704739804782,51.167839828247651 -115.561166848831974,51.168025572301396 -115.560736470664636,51.167535196042216 -115.560619654666539,51.167441759948247 -115.560303628381561,51.167124240482124 -115.560060480383157,51.166815979799054 -115.559780316758946,51.166628534038459 -115.559644731367484,51.166497230757095 -115.559468995238888,51.166373795269315 -115.560099033258211,51.166005197104603</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder></Document></kml>

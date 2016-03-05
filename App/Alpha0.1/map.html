@@ -453,18 +453,15 @@
 <script type="text/javascript" src="assets/js/jquery.ui.min.js"></script>
 
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=geometry"></script>
-<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+<script type="text/javascript" src="assets/js/infobox.js"></script>
 <script type="text/javascript" src="assets/js/ZipFile.complete.js"></script>
 <script type="text/javascript" src="assets/js/geoxml3.js"></script>
-<script type="text/javascript" src="http://geoxml3.googlecode.com/svn/trunk/ProjectedOverlay.js"></script>
+<script type="text/javascript" src="assets/js/ProjectedOverlay.js"></script>
 
 <script type="text/javascript" src="assets/plugins/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/modernizr/modernizr.js"></script>
-<script type="text/javascript" src="assets/plugins/mmenu/jquery.mmenu.js"></script>
-<script type="text/javascript" src="assets/js/styleswitch.js"></script>
-<script type="text/javascript" src="assets/plugins/form/form.js"></script>
 <script type="text/javascript" src="assets/plugins/datetime/datetime.js"></script>
-<script type="text/javascript" src="assets/plugins/chart/chart.js"></script>
+<script type="text/javascript" src="assets/plugins/mmenu/jquery.mmenu.js"></script>
 <script type="text/javascript" src="assets/plugins/pluginsForBS/pluginsForBS.js"></script>
 <script type="text/javascript" src="assets/plugins/miscellaneous/miscellaneous.js"></script>
 <script type="text/javascript" src="assets/js/caplet.custom.js"></script>
@@ -496,7 +493,7 @@
                 var OnClickHandler;
 
                 function initialize() {
-                    console.log("getting map");
+                    //console.log("getting map");
                     myLatLng = new google.maps.LatLng(39.8000959563484, -89.549560546875);
                     // these set the initial center, zoom and maptype for the map
                     // if it is not specified in the query string
@@ -574,15 +571,11 @@
                 }
 
         function shareLocation(){
-                console.log("getting location");
-                if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(successCallback, errorCallback_highAccuracy, {maximumAge:600000, timeout:5000, enableHighAccuracy: true});
-                }
+                navigator.geolocation.getCurrentPosition(successCallback, errorCallback_highAccuracy, {maximumAge:10000, timeout:5000, enableHighAccuracy: true});
         }
 
 	function successCallback(position){
             latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-          //displays the marker on the map
 
           var marker = new google.maps.Marker({
             position: latLng,
@@ -595,11 +588,11 @@
 	}
 
 	function errorCallback_highAccuracy(position){
-
+		alert("Location Not Found");
 	}
 
 	function calcPosition(){
-            console.log("calcPosition");
+            //console.log("calcPosition");
             //TEST MARKERS////////////////////////////////////////////////////////
             var latLngA = new google.maps.LatLng(51.048615, -114.070846);
             var latLngB = new google.maps.LatLng(51.129614, -114.150232);
@@ -608,8 +601,8 @@
           //////////////////////////////////////////////////////////////////////
 
             var distance = google.maps.geometry.spherical.computeDistanceBetween (latLngA, latLng) / 1000;
-            console.log(distance.toString());
-             console.log(geoXmlDoc.placemarks[0].polygon);
+            //console.log(distance.toString());
+             //console.log(geoXmlDoc.placemarks[0].polygon);
         }
 
         function calculateAndDisplayRoute(directionsService, directionsDisplay, Where) {
@@ -673,7 +666,7 @@
             google.maps.event.addListener(poly, "click", function () {
               poly.setOptions(highlightOptions);
 
-              console.log("Array Length = " + PolyArr.length);
+              //console.log("Array Length = " + PolyArr.length);
               var string ="";
               for(var i = 0; i < PolyArr.length; i++){
                 if(PolyArr[i].title == poly.title){
@@ -739,13 +732,13 @@
                 }
 
                 function useTheData(doc) {
-					          console.log("in useTheData");
+					          //console.log("in useTheData");
                     var currentBounds = map.getBounds();
                     if (!currentBounds) currentBounds = new google.maps.LatLngBounds();
                     // Geodata handling goes here, using JSON properties of the doc object
                     sidebarHtml = '<table><tr><td><a href="javascript:showAll();">Show All</a></td></tr>';
                     //  var sidebarHtml = '<table>';
-					          console.log("assign the xmldoc")
+					          //console.log("assign the xmldoc")
                     geoXmlDoc = doc[0];
                     for (var i = 0; i < geoXmlDoc.placemarks.length; i++) {
                       //console.log("in log");

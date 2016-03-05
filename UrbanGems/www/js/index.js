@@ -16,10 +16,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
 var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+        this.getPlaces();
     },
     // Bind Event Listeners
     //
@@ -50,13 +52,76 @@ var app = {
     takePicture: function() {
       navigator.camera.getPicture( function( imageURI ) {
         alert( imageURI );
+
+        if(localStorage.getItem("places") === null){
+          var obj = JSON.parse('{"city_hall":[{"userid":1,"uri":"http"}]}');
+        }
+        else{
+          var obj = JSON.parse(localStorage.getItem("places"));
+        }
+
+        //var counter = 0;
+        if(obj['city_hall'][0]['uri'] == "http"){
+          var counter = 0;
+          obj['city_hall'][counter]['userid'] = 1;
+          obj['city_hall'][counter]['uri'] = imageURI;
+        }
+        else{
+          var counter = Object.keys(obj['city_hall']).length;
+          obj['city_hall'][counter] = {userid:1, uri:imageURI};
+        }
+
+        var jsonString = JSON.stringify(obj);
+        localStorage.setItem("places", jsonString);
+
+        var tags = ""
+        var dropdowntags = ""
+        counter = counter + 1;
+        for(i = 0; i < counter; i++){
+            //tags = tags + "<img src='" + obj['city_hall'][i]['uri'] + "' height=100 width=100 />";
+            tags = tags +"<a href='#'>" +
+            "<img class='thumb' src=" + obj['city_hall'][i]['uri'] + " width=100 height=100 />" +
+            "<img class='big' src=" + obj['city_hall'][i]['uri'] + " width=200 height=200 />" +
+            "</a>";
+            dropdowntags = dropdowntags + "<img src=" + obj['city_hall'][i]['uri'] + " width=100 height=80 /><label>This is our description!</label>";
+        }
+        document.getElementById("pictureslider").innerHTML = tags;
+        //document.getElementById("myDropdown").innerHTML = dropdowntags;
       },
       function( message ) {
         alert( message );
       },
       {
         quality: 50,
-        destinationType: Camera.DestinationType.FILE_URI
+        destinationType: Camera.DestinationType.FILE_URI,
+        correctOrientation: true
       });
+    },
+
+
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+  myFunction: function() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  },
+
+  getPlaces: function(){
+      $.getJSON("places.json", function(potentialJson){
+      alert(potentialJson['places'][0]['pic'] + "");
+      var screwit = JSON.stringify(potentialJson);
+      alert("line 111");
+      localStorage.setItem("convertThis", screwit);
+    });
+alert("new hello 2")
+    var obj = JSON.parse(localStorage.getItem("convertThis"));
+    var table = "";
+    var counter = Object.keys(obj['places']).length;
+    alert("hello2");
+    for(i = 0; i < counter; i++){
+      table = table + "<table><tr><td><img src='" + obj['places'][i]['pic'] + "' alt='Upload image' /></td><td>" + obj['places'][i]['name'] + "</td></tr></table>";
     }
+    alert("hello3")
+    document.getElementById("myDropdown").innerHTML = table;
+    alert("Hello4!");
+  }
 };

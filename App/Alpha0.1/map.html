@@ -493,7 +493,7 @@
                 var OnClickHandler;
 
                 function initialize() {
-                    console.log("getting map");
+                    //console.log("getting map");
                     myLatLng = new google.maps.LatLng(39.8000959563484, -89.549560546875);
                     // these set the initial center, zoom and maptype for the map
                     // if it is not specified in the query string
@@ -571,7 +571,7 @@
                 }
 
         function shareLocation(){
-                console.log("getting location");
+                //console.log("getting location");
                 if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(successCallback, errorCallback_highAccuracy, {maximumAge:600000, timeout:5000, enableHighAccuracy: true});
                 }
@@ -596,7 +596,7 @@
 	}
 
 	function calcPosition(){
-            console.log("calcPosition");
+            //console.log("calcPosition");
             //TEST MARKERS////////////////////////////////////////////////////////
             var latLngA = new google.maps.LatLng(51.048615, -114.070846);
             var latLngB = new google.maps.LatLng(51.129614, -114.150232);
@@ -605,8 +605,8 @@
           //////////////////////////////////////////////////////////////////////
 
             var distance = google.maps.geometry.spherical.computeDistanceBetween (latLngA, latLng) / 1000;
-            console.log(distance.toString());
-             console.log(geoXmlDoc.placemarks[0].polygon);
+            //console.log(distance.toString());
+             //console.log(geoXmlDoc.placemarks[0].polygon);
         }
 
         function calculateAndDisplayRoute(directionsService, directionsDisplay, Where) {
@@ -670,7 +670,7 @@
             google.maps.event.addListener(poly, "click", function () {
               poly.setOptions(highlightOptions);
 
-              console.log("Array Length = " + PolyArr.length);
+              //console.log("Array Length = " + PolyArr.length);
               var string ="";
               for(var i = 0; i < PolyArr.length; i++){
                 if(PolyArr[i].title == poly.title){
@@ -736,13 +736,13 @@
                 }
 
                 function useTheData(doc) {
-					          console.log("in useTheData");
+					          //console.log("in useTheData");
                     var currentBounds = map.getBounds();
                     if (!currentBounds) currentBounds = new google.maps.LatLngBounds();
                     // Geodata handling goes here, using JSON properties of the doc object
                     sidebarHtml = '<table><tr><td><a href="javascript:showAll();">Show All</a></td></tr>';
                     //  var sidebarHtml = '<table>';
-					          console.log("assign the xmldoc")
+					          //console.log("assign the xmldoc")
                     geoXmlDoc = doc[0];
                     for (var i = 0; i < geoXmlDoc.placemarks.length; i++) {
                       //console.log("in log");

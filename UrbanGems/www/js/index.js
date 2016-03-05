@@ -50,6 +50,34 @@ var app = {
     takePicture: function() {
       navigator.camera.getPicture( function( imageURI ) {
         alert( imageURI );
+
+        if(localStorage.getItem("places") === null){
+          var obj = JSON.parse('{"city_hall":[{"userid":1,"uri":"http"}]}');
+        }
+        else{
+          var obj = JSON.parse(localStorage.getItem("places"));
+        }
+
+        //var counter = 0;
+        if(obj['city_hall'][0]['uri'] == "http"){
+          var counter = 0;
+          obj['city_hall'][counter]['userid'] = 1;
+          obj['city_hall'][counter]['uri'] = imageURI;
+        }
+        else{
+          var counter = Object.keys(obj['city_hall']).length;
+          obj['city_hall'][counter] = {userid:1, uri:imageURI};
+        }
+
+        var jsonString = JSON.stringify(obj);
+        localStorage.setItem("places", jsonString);
+
+        var tags = ""
+        counter = counter + 1;
+        for(i = 0; i < counter; i++){
+            tags = tags + "<img src='" + obj['city_hall'][i]['uri'] + "' height=100 width=100 />";
+        }
+        document.getElementById("pictureslider").innerHTML = tags;
       },
       function( message ) {
         alert( message );

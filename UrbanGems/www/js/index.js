@@ -73,15 +73,18 @@ var app = {
         localStorage.setItem("places", jsonString);
 
         var tags = ""
+        var dropdowntags = ""
         counter = counter + 1;
         for(i = 0; i < counter; i++){
             //tags = tags + "<img src='" + obj['city_hall'][i]['uri'] + "' height=100 width=100 />";
             tags = tags +"<a href='#'>" +
             "<img class='thumb' src=" + obj['city_hall'][i]['uri'] + " width=100 height=100 />" +
             "<img class='big' src=" + obj['city_hall'][i]['uri'] + " width=200 height=200 />" +
-            "</a>"
+            "</a>";
+            dropdowntags = dropdowntags + "<img src=" + obj['city_hall'][i]['uri'] + " width=100 height=80 /><label>This is our description!</label>";
         }
         document.getElementById("pictureslider").innerHTML = tags;
+        document.getElementById("myDropdown").innerHTML = dropdowntags;
       },
       function( message ) {
         alert( message );
@@ -91,5 +94,12 @@ var app = {
         destinationType: Camera.DestinationType.FILE_URI,
         correctOrientation: true
       });
-    }
+    },
+
+
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+  myFunction: function() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 };

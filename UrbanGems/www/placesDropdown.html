@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      function getPlaces(){
+
+        $.getJSON("places.json", function(potentialJson){
+          console.log(potentialJson['places'][0]['pic']);
+          var screwit = JSON.stringify(potentialJson);
+          localStorage.setItem("convertThis", screwit);
+        });
+
+        var obj = JSON.parse(localStorage.getItem("convertThis"));
+        var table = "<table>";
+        var counter = Object.keys(obj['places']).length;
+
+        for(i = 0; i < counter; i++){
+          table = table + "<tr><td><img src='" + obj['places'][i]['pic'] + "' alt='Upload image' /></td><td>" + obj['places'][i]['name'] + "</td></tr>";
+        }
+
+        table = table + "</table>";
+        document.getElementById("tableOfPlaces").innerHTML = table;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="tableOfPlaces"></div>
+    <button onclick="getPlaces()">gdktydtydytdky</button>
+
+
+  </body>
+</html>

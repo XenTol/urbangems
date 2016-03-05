@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document><Folder><name>HeritageLocations</name>
+<Schema name="HeritageLocations" id="HeritageLocations">
+	<SimpleField name="Name" type="string"></SimpleField>
+	<SimpleField name="Description" type="string"></SimpleField>
+	<SimpleField name="OBJECTID" type="float"></SimpleField>
+	<SimpleField name="REGISTRY" type="string"></SimpleField>
+	<SimpleField name="STREET" type="string"></SimpleField>
+	<SimpleField name="ROLL" type="string"></SimpleField>
+	<SimpleField name="LEGAL_DESC" type="string"></SimpleField>
+	<SimpleField name="STATUS" type="string"></SimpleField>
+	<SimpleField name="HERIT_YEAR" type="string"></SimpleField>
+	<SimpleField name="STREET_1" type="string"></SimpleField>
+	<SimpleField name="STREET_2" type="string"></SimpleField>
+	<SimpleField name="BUILDING" type="string"></SimpleField>
+	<SimpleField name="PLAQUE" type="string"></SimpleField>
+	<SimpleField name="HERIT_INFO" type="string"></SimpleField>
+	<SimpleField name="LAT" type="float"></SimpleField>
+	<SimpleField name="LON" type="float"></SimpleField>
+</Schema>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Spray Avenue</SimpleData>
+		<SimpleData name="ROLL">001218</SimpleData>
+		<SimpleData name="LEGAL_DESC">Villa Block 1, Lots 2 &amp; 3</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1940</SimpleData>
+		<SimpleData name="STREET_1">102</SimpleData>
+		<SimpleData name="STREET_2">A</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/001218.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Old Mineral Springs hospital Buildings.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Old Mineral Springs Hospital</SimpleData>
+		<SimpleData name="LAT">51.171625140000003</SimpleData>
+		<SimpleData name="LON">-115.569085430000001</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.569085439206006,51.171625143008178</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">2</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Railway Avenue</SimpleData>
+		<SimpleData name="ROLL">001150</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block PCL, 3,3336</SimpleData>
+		<SimpleData name="STATUS">Registered Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1910</SimpleData>
+		<SimpleData name="STREET_1">327</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Banff Railway Station.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Banff Railway Station</SimpleData>
+		<SimpleData name="LAT">51.182767460000001</SimpleData>
+		<SimpleData name="LON">-115.574256840000004</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.574256841303978,51.182767469772401</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">3</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">St. Julien Road</SimpleData>
+		<SimpleData name="ROLL">000643</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 39, Lot 15</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1929</SimpleData>
+		<SimpleData name="STREET_1">136</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000643.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Byron Harmon House.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Byron Harmon Home</SimpleData>
+		<SimpleData name="LAT">51.176137730000001</SimpleData>
+		<SimpleData name="LON">-115.562374109999993</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.56237411221359,51.176137732782841</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">4</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Buffalo Street</SimpleData>
+		<SimpleData name="ROLL">020134</SimpleData>
+		<SimpleData name="LEGAL_DESC">Parcel EU</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1905</SimpleData>
+		<SimpleData name="STREET_1">606</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Cemetery Power Substation.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Cemetery Power Substation</SimpleData>
+		<SimpleData name="LAT">51.174217689999999</SimpleData>
+		<SimpleData name="LON">-115.564680659999993</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.564680661515112,51.174217696723304</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">5</SimpleData>
+		<SimpleData name="REGISTRY">B</SimpleData>
+		<SimpleData name="STREET">Tunnel Mountain Drive</SimpleData>
+		<SimpleData name="ROLL">001180</SimpleData>
+		<SimpleData name="LEGAL_DESC">Parcel DU</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1907</SimpleData>
+		<SimpleData name="STREET_1">801</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/001180.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Bankhead Train Station.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Bankhead Train Station</SimpleData>
+		<SimpleData name="LAT">51.185462630000004</SimpleData>
+		<SimpleData name="LON">-115.548041789999999</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.548041797146013,51.18546263232011</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">6</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Muskrat Street</SimpleData>
+		<SimpleData name="ROLL">000304</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 16, Lot 1</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1910</SimpleData>
+		<SimpleData name="STREET_1">328</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000304.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Kidney Residence.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Kidney Home (Bankhead)</SimpleData>
+		<SimpleData name="LAT">51.178481079999997</SimpleData>
+		<SimpleData name="LON">-115.567099040000002</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.567099046215404,51.178481082617608</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">7</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Squirrel Street</SimpleData>
+		<SimpleData name="ROLL">008004</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 56, Lots 1 &amp; 2</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1952</SimpleData>
+		<SimpleData name="STREET_1">305</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/008004.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\St Marys Catholic Church.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">St. Mary's Catholic Church</SimpleData>
+		<SimpleData name="LAT">51.179432779999999</SimpleData>
+		<SimpleData name="LON">-115.574308590000001</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.574308594227816,51.179432785515438</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">8</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Bow Avenue</SimpleData>
+		<SimpleData name="ROLL">002006</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block A, Lot 12</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1930</SimpleData>
+		<SimpleData name="STREET_1">130</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/002005.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Whyte Residence.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Peter and Catharine Whyte Home</SimpleData>
+		<SimpleData name="LAT">51.175791220000001</SimpleData>
+		<SimpleData name="LON">-115.573716169999997</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.573716177809089,51.175791222798196</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">9</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Bow Avenue</SimpleData>
+		<SimpleData name="ROLL">000810</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block A, Lot 14W</SimpleData>
+		<SimpleData name="STATUS">Registered Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1913</SimpleData>
+		<SimpleData name="STREET_1">136</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000810.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Crosby Residence.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Crosby Home (Abegweit)</SimpleData>
+		<SimpleData name="LAT">51.176089519999998</SimpleData>
+		<SimpleData name="LON">-115.574333019999997</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.574333021046328,51.176089523606507</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">10</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Lynx Street</SimpleData>
+		<SimpleData name="ROLL">000809</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block A, Lot 13</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1912</SimpleData>
+		<SimpleData name="STREET_1">135</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000809.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Sibbald Residence.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Sibbald Home</SimpleData>
+		<SimpleData name="LAT">51.176074260000000</SimpleData>
+		<SimpleData name="LON">-115.573431049999996</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.57343105911238,51.176074265311378</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">11</SimpleData>
+		<SimpleData name="STREET">Lynx Street</SimpleData>
+		<SimpleData name="ROLL">002005</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block A, Lot 11</SimpleData>
+		<SimpleData name="STREET_1">125</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/002006.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Moore Residence.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Moore Residence</SimpleData>
+		<SimpleData name="LAT">51.175597420000003</SimpleData>
+		<SimpleData name="LON">-115.573605049999998</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.573605051991123,51.17559742405728</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">12</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Banff Avenue</SimpleData>
+		<SimpleData name="ROLL">000004</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 1, Lots 6 &amp; 7</SimpleData>
+		<SimpleData name="STATUS">Registered Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1909</SimpleData>
+		<SimpleData name="STREET_1">111</SimpleData>
+		<SimpleData name="STREET_2">&amp; 113</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000004.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Harmony Lane.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Harmony Lane</SimpleData>
+		<SimpleData name="LAT">51.175110879999998</SimpleData>
+		<SimpleData name="LON">-115.571512429999999</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.571512435973503,51.175110885529662</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">13</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Banff Avenue</SimpleData>
+		<SimpleData name="ROLL">000002</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 1, Lots 2 &amp; 3</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1913</SimpleData>
+		<SimpleData name="STREET_1">103</SimpleData>
+		<SimpleData name="STREET_2">&amp; 105</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000002.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Dave White Block.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Dave White Block</SimpleData>
+		<SimpleData name="LAT">51.174686680000001</SimpleData>
+		<SimpleData name="LON">-115.571549149999996</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.571549156670073,51.174686682874921</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">14</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Caribou Street</SimpleData>
+		<SimpleData name="ROLL">000846</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block D, Lot 1</SimpleData>
+		<SimpleData name="STATUS">Registered Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1924</SimpleData>
+		<SimpleData name="STREET_1">103</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000846.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Cascade Masonic Hall</SimpleData>
+		<SimpleData name="LAT">51.176353440000000</SimpleData>
+		<SimpleData name="LON">-115.572752640000004</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.572752643487917,51.176353449630703</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">15</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Bear Street</SimpleData>
+		<SimpleData name="ROLL">000107</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 5, Lot 5</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1911</SimpleData>
+		<SimpleData name="STREET_1">209</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000106.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Old Crag Cabin.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Original Crag and Canyon Building</SimpleData>
+		<SimpleData name="LAT">51.177243269999998</SimpleData>
+		<SimpleData name="LON">-115.572809460000002</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.572809463811325,51.177243280231188</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">16</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Lynx Street</SimpleData>
+		<SimpleData name="ROLL">000117</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 5, Lot 24</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1910</SimpleData>
+		<SimpleData name="STREET_1">210</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000117.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Homestead Restaurant.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Homestead Inn / Melissa's Restaurant</SimpleData>
+		<SimpleData name="LAT">51.177538490000003</SimpleData>
+		<SimpleData name="LON">-115.573375179999999</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.573375188853518,51.177538492836767</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">17</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Banff Avenue</SimpleData>
+		<SimpleData name="ROLL">000119</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 6, Lot 4</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1946</SimpleData>
+		<SimpleData name="STREET_1">207</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000119.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Rocky Mountain Tours and Transportation building.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Rocky Mountain Tours (Grizzly House)</SimpleData>
+		<SimpleData name="LAT">51.177083390000000</SimpleData>
+		<SimpleData name="LON">-115.571343479999996</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.571343487786564,51.177083399805603</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">18</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Banff Avenue</SimpleData>
+		<SimpleData name="ROLL">009447</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 7, Lot 12</SimpleData>
+		<SimpleData name="STATUS">Federal Heritage Building</SimpleData>
+		<SimpleData name="HERIT_YEAR">1939</SimpleData>
+		<SimpleData name="STREET_1">224</SimpleData>
+		<SimpleData name="STREET_2">&amp; 226</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/009447.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Banff School Auditorium.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Banff Auditorium (Parks Information Office)</SimpleData>
+		<SimpleData name="LAT">51.177981650000000</SimpleData>
+		<SimpleData name="LON">-115.570259419999999</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.570259426579042,51.177981650001847</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">19</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Banff Avenue</SimpleData>
+		<SimpleData name="ROLL">008003</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 7, Lots 14 &amp; 15</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1929</SimpleData>
+		<SimpleData name="STREET_1">228</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/008003.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\St Pauls Presbyterian Church.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">St. Paul's Presbyterian Church</SimpleData>
+		<SimpleData name="LAT">51.178200670000003</SimpleData>
+		<SimpleData name="LON">-115.570239520000001</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.570239522535601,51.178200677787011</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">20</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Banff Avenue</SimpleData>
+		<SimpleData name="ROLL">000135</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 7, Lots 1 &amp; 2</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1939</SimpleData>
+		<SimpleData name="STREET_1">202</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000135.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Brewster Transport Co Building.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Brewster Transportation Co.</SimpleData>
+		<SimpleData name="LAT">51.176774880000004</SimpleData>
+		<SimpleData name="LON">-115.570363290000003</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.570363299185871,51.176774888539171</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">21</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Beaver Street</SimpleData>
+		<SimpleData name="ROLL">020020</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 7, Lots 28 - 30</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1935</SimpleData>
+		<SimpleData name="STREET_1">201</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/020020.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Fire Hall.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Fire Hall</SimpleData>
+		<SimpleData name="LAT">51.176972040000003</SimpleData>
+		<SimpleData name="LON">-115.569693009999995</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.569693019684749,51.176972049260769</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">22</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Beaver Street</SimpleData>
+		<SimpleData name="ROLL">000151</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 8, Lot  3</SimpleData>
+		<SimpleData name="STATUS">Registered Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1909</SimpleData>
+		<SimpleData name="STREET_1">206</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000151.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Luxton Residence.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Luxton Residences</SimpleData>
+		<SimpleData name="LAT">51.176833799999997</SimpleData>
+		<SimpleData name="LON">-115.568875919999996</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.568875925530563,51.176833805933697</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">23</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Beaver Street</SimpleData>
+		<SimpleData name="ROLL">000152</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 8, Lot 4</SimpleData>
+		<SimpleData name="STATUS">Registered Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1887</SimpleData>
+		<SimpleData name="STREET_1">208</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000152.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Tanglewood.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Tanglewood (Oldest Bldg in Banff)</SimpleData>
+		<SimpleData name="LAT">51.176998529999999</SimpleData>
+		<SimpleData name="LON">-115.568861220000002</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.568861222224086,51.176998530161633</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">24</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Beaver Street</SimpleData>
+		<SimpleData name="ROLL">015302</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 8, Lot 6</SimpleData>
+		<SimpleData name="STATUS">Registered Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1914</SimpleData>
+		<SimpleData name="STREET_1">212</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/015302.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Beaver Lodge.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Foster Home / Beaver Lodge</SimpleData>
+		<SimpleData name="LAT">51.177217929999998</SimpleData>
+		<SimpleData name="LON">-115.568842430000004</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.568842436323976,51.177217935659868</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">25</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Beaver Street</SimpleData>
+		<SimpleData name="ROLL">000154</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 8, Lot 7 &amp; 8</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1905</SimpleData>
+		<SimpleData name="STREET_1">214</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000154.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Holmes Residence.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Holmes Home/Unwin Home</SimpleData>
+		<SimpleData name="LAT">51.177382260000002</SimpleData>
+		<SimpleData name="LON">-115.568828249999996</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.568828255693674,51.177382266088706</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">26</SimpleData>
+		<SimpleData name="REGISTRY">B</SimpleData>
+		<SimpleData name="STREET">Beaver Street</SimpleData>
+		<SimpleData name="ROLL">000156</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 8, Lot 10</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1950 (house)    1914 (cabins)</SimpleData>
+		<SimpleData name="STREET_1">220</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000156.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\James Thompson House and Tourist Cabins.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">James Thompson Home &amp; 2 Cabins</SimpleData>
+		<SimpleData name="LAT">51.177656790000000</SimpleData>
+		<SimpleData name="LON">-115.568804990000004</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.56880499702315,51.177656791413</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">27</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Otter Street</SimpleData>
+		<SimpleData name="ROLL">000511</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 26, Lots 1 &amp; 2</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1913</SimpleData>
+		<SimpleData name="STREET_1">202</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000511.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Bayne Residence.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">D. C. Bayne Home</SimpleData>
+		<SimpleData name="LAT">51.176579369999999</SimpleData>
+		<SimpleData name="LON">-115.565842309999994</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.565842310806374,51.176579370395288</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">28</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Grizzly Street</SimpleData>
+		<SimpleData name="ROLL">000554</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 27, Lots 23 - 25</SimpleData>
+		<SimpleData name="STATUS">Registered Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1912</SimpleData>
+		<SimpleData name="STREET_1">117</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000554.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Tarry a While.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Mary Schaffer - Warren Home</SimpleData>
+		<SimpleData name="LAT">51.175097899999997</SimpleData>
+		<SimpleData name="LON">-115.565190950000002</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.565190954918563,51.175097908450383</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">29</SimpleData>
+		<SimpleData name="REGISTRY">B</SimpleData>
+		<SimpleData name="STREET">Muskrat Street</SimpleData>
+		<SimpleData name="ROLL">000077</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 4, Lot 8</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1910</SimpleData>
+		<SimpleData name="STREET_1">110</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Norman Sanson Home.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Sanson Home and Carriage House</SimpleData>
+		<SimpleData name="LAT">51.174810080000000</SimpleData>
+		<SimpleData name="LON">-115.567565750000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.567565754948617,51.174810087260177</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">30</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Buffalo Street</SimpleData>
+		<SimpleData name="ROLL">000830</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block B, Lot 9</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1911</SimpleData>
+		<SimpleData name="STREET_1">501</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000830.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Senator Forget Residence.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Senator Forget Home</SimpleData>
+		<SimpleData name="LAT">51.173913460000001</SimpleData>
+		<SimpleData name="LON">-115.567761770000004</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.56776177207783,51.173913461819907</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">31</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Banff Avenue</SimpleData>
+		<SimpleData name="ROLL">000028</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 2, Lot 9</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1920</SimpleData>
+		<SimpleData name="STREET_1">120</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000028.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Cascade Dance Hall.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Cascade Dance Hall</SimpleData>
+		<SimpleData name="LAT">51.175404759999999</SimpleData>
+		<SimpleData name="LON">-115.570482220000002</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.570482228244288,51.175404768160881</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">32</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Buffalo Street</SimpleData>
+		<SimpleData name="ROLL">008002</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 3, Lot 7</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1897</SimpleData>
+		<SimpleData name="STREET_1">400</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/008002.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\St Georges in the Pines Anglican Church.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">St. George's-in-the-Pines Anglican Church</SimpleData>
+		<SimpleData name="LAT">51.174575200000000</SimpleData>
+		<SimpleData name="LON">-115.569092479999995</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.569092483649243,51.174575204663618</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">33</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Banff Avenue</SimpleData>
+		<SimpleData name="ROLL">008001</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block 2, Lots 1, 2 &amp; 3</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1927</SimpleData>
+		<SimpleData name="STREET_1">102</SimpleData>
+		<SimpleData name="STREET_2">&amp; 104</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/008001.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Rundle Memorial United Church.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Rundle United Church</SimpleData>
+		<SimpleData name="LAT">51.174601619999997</SimpleData>
+		<SimpleData name="LON">-115.570551519999995</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.57055153034446,51.174601627685618</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">34</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Buffalo Street</SimpleData>
+		<SimpleData name="ROLL">009173</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block B, Lots 3 - 5</SimpleData>
+		<SimpleData name="STATUS">Federal Heritage Building</SimpleData>
+		<SimpleData name="HERIT_YEAR">1920</SimpleData>
+		<SimpleData name="STREET_1">313</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/009173.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Park Superintendents Residence.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Park Superintendent's Home</SimpleData>
+		<SimpleData name="LAT">51.173986419999999</SimpleData>
+		<SimpleData name="LON">-115.569416380000007</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.569416381992497,51.173986423999324</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">35</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Banff Avenue</SimpleData>
+		<SimpleData name="ROLL">009442</SimpleData>
+		<SimpleData name="LEGAL_DESC">Block A, Lot 1</SimpleData>
+		<SimpleData name="STATUS">National Historic Site</SimpleData>
+		<SimpleData name="HERIT_YEAR">1903</SimpleData>
+		<SimpleData name="STREET_1">95</SimpleData>
+		<SimpleData name="STREET_2">-97</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/009442.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\</SimpleData>
+		<SimpleData name="HERIT_INFO">Banff Park Museum</SimpleData>
+		<SimpleData name="LAT">51.173927560000003</SimpleData>
+		<SimpleData name="LON">-115.571664350000006</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.571664357483684,51.173927560071938</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">36</SimpleData>
+		<SimpleData name="REGISTRY">B</SimpleData>
+		<SimpleData name="STREET">Birch Avenue</SimpleData>
+		<SimpleData name="ROLL">002009</SimpleData>
+		<SimpleData name="LEGAL_DESC">Parcel A</SimpleData>
+		<SimpleData name="HERIT_YEAR">1952</SimpleData>
+		<SimpleData name="STREET_1">1</SimpleData>
+		<SimpleData name="HERIT_INFO">Luxton Museum</SimpleData>
+		<SimpleData name="LAT">51.172092859999999</SimpleData>
+		<SimpleData name="LON">-115.573531290000005</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.573531290669933,51.172092865125883</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">37</SimpleData>
+		<SimpleData name="REGISTRY">B</SimpleData>
+		<SimpleData name="STREET">Cave Avenue</SimpleData>
+		<SimpleData name="ROLL">000925</SimpleData>
+		<SimpleData name="LEGAL_DESC">Villa Block 7, Lot 15</SimpleData>
+		<SimpleData name="STATUS">Demolished</SimpleData>
+		<SimpleData name="HERIT_YEAR">2000</SimpleData>
+		<SimpleData name="STREET_1">119</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Charlie Beil Kiln.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Charlie Beil Place</SimpleData>
+		<SimpleData name="LAT">51.170853379999997</SimpleData>
+		<SimpleData name="LON">-115.576475639999998</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.576475645969907,51.17085338429488</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">38</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Spray Avenue</SimpleData>
+		<SimpleData name="ROLL">000858</SimpleData>
+		<SimpleData name="LEGAL_DESC">Villa Block 1, Lots 11 &amp; 12</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1921</SimpleData>
+		<SimpleData name="STREET_1">124</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/000858.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Browne Residence.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Belmor Browne Home (Elkhorn Lodge)</SimpleData>
+		<SimpleData name="LAT">51.169213489999997</SimpleData>
+		<SimpleData name="LON">-115.567340540000004</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.567340546591751,51.169213496708451</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">39</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Glen Avenue</SimpleData>
+		<SimpleData name="ROLL">009060</SimpleData>
+		<SimpleData name="LEGAL_DESC">Villa Block 1</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1913</SimpleData>
+		<SimpleData name="STREET_1">302</SimpleData>
+		<SimpleData name="BUILDING">http://bourgeau.tob.int/website/images_system/Property_Photographs/009060.jpg</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Fish Hatchery Superintendent.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">The Fish Hatchery Superintendent's Residence</SimpleData>
+		<SimpleData name="LAT">51.169446090000001</SimpleData>
+		<SimpleData name="LON">-115.565233190000001</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.56523319115206,51.169446093046957</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">40</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Birch Street</SimpleData>
+		<SimpleData name="LEGAL_DESC">B2</SimpleData>
+		<SimpleData name="STATUS">Plaqued Heritage Resource</SimpleData>
+		<SimpleData name="HERIT_YEAR">1904</SimpleData>
+		<SimpleData name="STREET_1">101</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Sign of the Goat Curio Shop.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Sign of the Goat Curio Shop</SimpleData>
+		<SimpleData name="LAT">51.172136920000000</SimpleData>
+		<SimpleData name="LON">-115.572313469999997</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.572313470361891,51.172136929081951</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">41</SimpleData>
+		<SimpleData name="REGISTRY">A</SimpleData>
+		<SimpleData name="STREET">Banff Avenue</SimpleData>
+		<SimpleData name="HERIT_YEAR">1923</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\</SimpleData>
+		<SimpleData name="HERIT_INFO">Bow River Bridge</SimpleData>
+		<SimpleData name="LAT">51.172777830000001</SimpleData>
+		<SimpleData name="LON">-115.571213360000002</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.571213366075654,51.17277783172981</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#HeritageLocations">
+		<SimpleData name="OBJECTID">42</SimpleData>
+		<SimpleData name="STREET">Recreation Grounds</SimpleData>
+		<SimpleData name="PLAQUE">\\fileserver.tob.int\users\Environmental Services\_planning\Heritage Planning\Communication Projects\Heritage Plaquing Program\Plaque Photos\Rundle Campground Service Building.jpg</SimpleData>
+		<SimpleData name="HERIT_INFO">Rundle Campground Service Building</SimpleData>
+		<SimpleData name="LAT">51.172707500000001</SimpleData>
+		<SimpleData name="LON">-115.576829979999999</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-115.576829986388105,51.172707505889854</coordinates></Point>
+  </Placemark>
+</Folder></Document></kml>

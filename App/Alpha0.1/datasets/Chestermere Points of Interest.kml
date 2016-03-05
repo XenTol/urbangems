@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document><Folder><name>CH_POINTS_OF_INTEREST</name>
+  <Placemark>
+	<name>CIBC</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">BANK</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">100 MARINA DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.829074223950187,51.046554173912391</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>EAST CHESTERMERE</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SUB_CAT">PLAYGROUND</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">740 EAST CHESTERMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.810883696025471,51.030699231277879</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>NEW APOSTOLIC CHURCH CANADA</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">CHURCHES &amp; CEMETERIES</SimpleData>
+		<SimpleData name="SUB_CAT">CHURCH</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">133 RAINBOW FALLS DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.839853631535249,51.028758128470308</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>LAVANDER WAY</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SUB_CAT">PLAYGROUND</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">132 LAVENDER WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.837156219825687,51.029431722983098</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>EAST LAKEVIEW</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SUB_CAT">PLAYGROUND</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">520 EAST LAKEVIEW PLACE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.806356099899673,51.040057365465337</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>KINNIBURGH</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SUB_CAT">PLAYGROUND</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">112 KINNIBURGH BOULEVARD</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.808084927661156,51.029217654256108</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>WEST LAKEVIEW</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SUB_CAT">PLAYGROUND</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">184 WEST LAKEVIEW CIRCLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.827866678207499,51.032473860352709</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>ASPENMERE</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SUB_CAT">PLAYGROUND</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">101 ASPENMERE CLOSE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.827993726363616,51.058404982425174</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BALL DIAMOND</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">201 WEST CHESTERMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.823828543687128,51.047748745617319</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>OAKMERE</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SUB_CAT">PLAYGROUND</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">150 OAKMERE WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.832101793937383,51.047604911236093</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>SPRINGMERE</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SUB_CAT">PLAYGROUND</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">141 SPRINGMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.839036339220101,51.041892050536028</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>WEST CREEK</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SUB_CAT">PLAYGROUND</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">129 WEST CREEK SPRINGS</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.831994903279067,51.03702750555739</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>LIBRARY</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">EDUCATION</SimpleData>
+		<SimpleData name="SUB_CAT">TOWN OF CHESTERMERE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">TOWN HALL 105 MARINA ROAD</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.824755497187979,51.05343451801965</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>WINDERMERE</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SUB_CAT">PLAYGROUND</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">275 WINDERMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.83510739386098,51.050431604141743</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PARKMERE</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SUB_CAT">PLAYGROUND</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">304 PARKMERE GREEN</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.828022315466825,51.054210949311575</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>WEST CREEK</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SUB_CAT">PLAYGROUND</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">188 WEST CREEK CIRCLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.830829264435152,51.032803764751364</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>WAREHOUSE</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">4</SimpleData>
+		<SimpleData name="T_SCALE">4</SimpleData>
+		<SimpleData name="CATEGORY">OTHER</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">BUILDING 2 100 RAINBOW ROAD</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.840647824846101,51.025477745885652</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RETAIL STORE 3</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">320 WEST CREEK DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.840531116819378,51.029629253918323</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RETAIL STORE 2</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">320 WEST CREEK DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.841679425690074,51.029673104951137</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>MACS</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">320 WEST CREEK DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.841656348408165,51.029065158495847</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>ESSO</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">TRANSPORTATION</SimpleData>
+		<SimpleData name="SUB_CAT">GAS STATION</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">320 WEST CREEK DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.841267499232984,51.029045393670074</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RETAIL STORE 1</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">320 WEST CREEK DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.840868993659058,51.02888028717792</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>OUR LADY OF WISDOM</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">EDUCATION</SimpleData>
+		<SimpleData name="SUB_CAT">SCHOOL</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">134 RAINBOW FALLS DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.840435543100142,51.02787919054358</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>YACHT CLUB</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">635 EAST CHESTERMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.809902094339549,51.033722865533477</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>NEW SCHOOL</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">4</SimpleData>
+		<SimpleData name="T_SCALE">4</SimpleData>
+		<SimpleData name="CATEGORY">EDUCATION</SimpleData>
+		<SimpleData name="SUB_CAT">SCHOOL</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">325 KINNIBURGH BOULEVARD</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.812744175930035,51.02198400724324</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RETAIL NEW</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">4</SimpleData>
+		<SimpleData name="T_SCALE">4</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">288 KINNIBURGH BOULEVARD</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.809943694962513,51.022741112560681</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>CHESTERMERE LANDING</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">109 EAST CHESTERMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.816308881479472,51.051822804408687</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RCMP</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">2</SimpleData>
+		<SimpleData name="T_SCALE">2</SimpleData>
+		<SimpleData name="CATEGORY">EMERGENCY SERVICES</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">156 EAST CHESTERMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.814253879526831,51.050945617826997</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>FIRE HALL</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">2</SimpleData>
+		<SimpleData name="T_SCALE">2</SimpleData>
+		<SimpleData name="CATEGORY">EMERGENCY SERVICES</SimpleData>
+		<SimpleData name="SUB_CAT">TOWN OF CHESTERMERE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">156 EAST CHESTERMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.814108070598863,51.050763545852831</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>SUBWAY</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RESTAURANT</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">140 EAST CHESTERMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.815105540479692,51.05212456152384</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>THE BARGAIN SHOP</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">140 EAST CHESTERMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.814232383290843,51.051746508207643</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>CHESTERMERE VETRINARY CLINIC</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">140 EAST CHESTERMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.814637907182743,51.051110711476063</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>CHESTERMERE LIQUOR</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">124 EAST CHESTERMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.815151677531674,51.051787356123839</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>CHESTERMERE LAKE MIDDLE SCHOOL</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">EDUCATION</SimpleData>
+		<SimpleData name="SUB_CAT">SCHOOL</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">128 WEST LAKEVIEW DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.827785000312389,51.030602886040484</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>WEST CREEK CAR WASH</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">AUTOMOTIVE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">200 MERGANSER DRIVE WEST</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.841414033103973,51.036478008059667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>CHESTERMERE PLAZA</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">300 MERGANSER DRIVE WEST</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.840097283206219,51.03765540023911</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RECREATION CENTER</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">201 WEST CHESTERMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.824881925488938,51.048146568437588</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>ST GABRIEL THE ARCHANGEL SCHOOL</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">EDUCATION</SimpleData>
+		<SimpleData name="SUB_CAT">SCHOOL</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">197 INVERMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.83561314410602,51.047141983094257</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PRAIRIE WATER ELEMENTARY SCHOOL</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">EDUCATION</SimpleData>
+		<SimpleData name="SUB_CAT">SCHOOL</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">201 INVERMERE DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.835761594678019,51.048347413953223</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PUBLIC UTILITY LOT</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">4</SimpleData>
+		<SimpleData name="T_SCALE">4</SimpleData>
+		<SimpleData name="CATEGORY">GOVERNMENT</SimpleData>
+		<SimpleData name="SUB_CAT">TOWN OF CHESTERMERE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">240 MERGANSER DRIVE WEST</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.841269074824993,51.037127096815098</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>SHOPPERS DRUG MART</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">196 CHESTERMERE STATION WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.827824004520423,51.047830286373667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BOSTON PIZZA</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RESTAURANT</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">196 CHESTERMERE STATION WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.826369806166682,51.04861326804064</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>LUBE X</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">AUTOMOTIVE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">196 CHESTERMERE STATION WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.825888408280747,51.048866923700636</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>ROYAL BANK</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">BANK</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">196 CHESTERMERE STATION WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.827766999319422,51.048443072168808</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>TIRECRAFT</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">AUTOMOTIVE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">100 MARINA DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.829022019255191,51.047593116252763</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>STARBUCKS</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">100 MARINA DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.828747740143271,51.046858136755738</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>LAKESIDE GOLF COURSE</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">RECREATION &amp; TOURISM</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">555 LAKESIDE GREENS DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.827201600024495,51.038595792267721</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PETRO CANADA</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">TRANSPORTATION</SimpleData>
+		<SimpleData name="SUB_CAT">GAS STATION</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">140 CHESTERMERE STATION WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.824030247242092,51.049935544917446</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>TD BANK</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">BANK</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">156 CHESTERMERE STATION WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.825080222212904,51.04940533628492</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>SOBEYS</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">156 CHESTERMERE STATION WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.824463402143024,51.049798178819842</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>TIM HORTONS</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RESTAURANT</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">120 JOHN MORRIS WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.822905006095311,51.050547459912188</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>A&amp;W</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RESTAURANT</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">120 JOHN MORRIS WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.823737191974146,51.050609470524932</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>WISE AND COMPANY</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">BUSINESS</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">120 JOHN MORRIS WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.823140462255267,51.050843295471083</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>SCHOOL</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">EDUCATION</SimpleData>
+		<SimpleData name="SUB_CAT">SCHOOL</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">133 MAIN STREET</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.824814300601957,51.052526180375189</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>TOWN HALL</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">4</SimpleData>
+		<SimpleData name="T_SCALE">4</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">TOWN OF CHESTERMERE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">TOWN HALL 105 MARINA ROAD</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.824755497187979,51.05343451801965</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>SAFEWAY</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">UNIT 100 135 CHESTERMERE STATION WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.825990703871753,51.051161518370598</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>WATER TREATMENT</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">4</SimpleData>
+		<SimpleData name="T_SCALE">4</SimpleData>
+		<SimpleData name="CATEGORY">WATER SOURCES</SimpleData>
+		<SimpleData name="SUB_CAT">TOWN OF CHESTERMERE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">202 SPRINGMERE ROAD</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.840204941464194,51.039386579924745</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>CHESTERMERE LEARNING CENTRE</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">4</SimpleData>
+		<SimpleData name="T_SCALE">4</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">EDUCATION</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">100 MAIN STREET</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.824316168429036,51.051277235923777</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>SCOTIA BANK</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">BANK</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">175 CHESTERMERE STATION WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.826336927572683,51.049246677138392</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>CHESTERMERE STATION</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">175 CHESTERMERE STATION WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.827607776457455,51.04983605101701</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>CHESTERMERE BOTTLE DEPOT</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">BUSINESS</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">175 CHESTERMERE STATION WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.827527589278489,51.050615434976727</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>HARVEY'S</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RESTAURANT</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">175 CHESTERMERE STATION WAY</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.827656231333449,51.049096292886112</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>LIFT STATION</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">4</SimpleData>
+		<SimpleData name="T_SCALE">4</SimpleData>
+		<SimpleData name="CATEGORY">OTHER</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.807275518342962,51.017180626316851</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>REGULATOR BUILDING</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">4</SimpleData>
+		<SimpleData name="T_SCALE">4</SimpleData>
+		<SimpleData name="CATEGORY">OTHER</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.818182598981053,51.016140056131164</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RAINBOW CREEK ELEMENTARY SCHOOL</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">3</SimpleData>
+		<SimpleData name="T_SCALE">3</SimpleData>
+		<SimpleData name="CATEGORY">EDUCATION</SimpleData>
+		<SimpleData name="SUB_CAT">SCHOOL</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">285 WEST CREEK DRIVE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.839620683303281,51.031400586087052</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>CONVENIENCE STORE</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">RETAIL STORE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">400 MERGANSER DRIVE WEST</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.838696107023466,51.038400921958413</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>GAS PLUS</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">5</SimpleData>
+		<SimpleData name="T_SCALE">5</SimpleData>
+		<SimpleData name="CATEGORY">TRANSPORTATION</SimpleData>
+		<SimpleData name="SUB_CAT">GAS STATION</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">400 MERGANSER DRIVE WEST</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.838531828205475,51.038191131430246</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PUBLIC WORKS</name>
+	<ExtendedData><SchemaData schemaUrl="#CH_POINTS_OF_INTEREST">
+		<SimpleData name="LOCALE">CHESTERMERE</SimpleData>
+		<SimpleData name="ZOOM">4</SimpleData>
+		<SimpleData name="T_SCALE">4</SimpleData>
+		<SimpleData name="CATEGORY">BUSINESS</SimpleData>
+		<SimpleData name="SUB_CAT">TOWN OF CHESTERMERE</SimpleData>
+		<SimpleData name="SOURCE">CHESTERMERE</SimpleData>
+		<SimpleData name="ADDRESS">281107 TWP RD 243</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-113.805792796484326,51.051401982571512</coordinates></Point>
+  </Placemark>
+</Folder>
+<Schema name="CH_POINTS_OF_INTEREST" id="CH_POINTS_OF_INTEREST">
+	<SimpleField name="LOCALE" type="string"></SimpleField>
+	<SimpleField name="ZOOM" type="int"></SimpleField>
+	<SimpleField name="T_SCALE" type="int"></SimpleField>
+	<SimpleField name="CATEGORY" type="string"></SimpleField>
+	<SimpleField name="SUB_CAT" type="string"></SimpleField>
+	<SimpleField name="SOURCE" type="string"></SimpleField>
+	<SimpleField name="ADDRESS" type="string"></SimpleField>
+	<SimpleField name="PHONE" type="string"></SimpleField>
+</Schema>
+</Document></kml>

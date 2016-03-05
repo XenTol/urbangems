@@ -16,10 +16,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
 var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+        this.getPlaces();
     },
     // Bind Event Listeners
     //
@@ -84,7 +86,7 @@ var app = {
             dropdowntags = dropdowntags + "<img src=" + obj['city_hall'][i]['uri'] + " width=100 height=80 /><label>This is our description!</label>";
         }
         document.getElementById("pictureslider").innerHTML = tags;
-        document.getElementById("myDropdown").innerHTML = dropdowntags;
+        //document.getElementById("myDropdown").innerHTML = dropdowntags;
       },
       function( message ) {
         alert( message );
@@ -101,5 +103,25 @@ var app = {
 toggle between hiding and showing the dropdown content */
   myFunction: function() {
     document.getElementById("myDropdown").classList.toggle("show");
-}
+  },
+
+  getPlaces: function(){
+      $.getJSON("places.json", function(potentialJson){
+      alert(potentialJson['places'][0]['pic'] + "");
+      var screwit = JSON.stringify(potentialJson);
+      alert("line 111");
+      localStorage.setItem("convertThis", screwit);
+    });
+alert("new hello 2")
+    var obj = JSON.parse(localStorage.getItem("convertThis"));
+    var table = "";
+    var counter = Object.keys(obj['places']).length;
+    alert("hello2");
+    for(i = 0; i < counter; i++){
+      table = table + "<table><tr><td><img src='" + obj['places'][i]['pic'] + "' alt='Upload image' /></td><td>" + obj['places'][i]['name'] + "</td></tr></table>";
+    }
+    alert("hello3")
+    document.getElementById("myDropdown").innerHTML = table;
+    alert("Hello4!");
+  }
 };

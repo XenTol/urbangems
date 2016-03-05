@@ -1,0 +1,64 @@
+{
+  "places": [
+    {
+      "name": "ContainR Park",
+      "pic": "places/images/containr.png",
+      "lat": 51.054926,
+      "lng": -114.083888
+    },
+    {
+      "name": "Rundle Ruins",
+      "pic": "palces/images/rundle.jpg",
+      "lat": 51.040697,
+      "lng": -114.0488
+    },
+    {
+      "name": "Bow Passage Overlook",
+      "pic": "places/images/bowRiver.jpg",
+      "lat": 51.042189,
+      "lng": -114.017919
+    },
+    {
+      "name": "Sun Engraving in Nose Hill",
+      "pic": "places/images/sunRock.jpg",
+      "lat": 51.11223,
+      "lng": -114.0951
+    },
+    {
+      "name": "Chinese Cultural Center",
+      "pic": "places/images/center.jpg",
+      "lat": 51.051398,
+      "lng": -114.065109
+    },
+    {
+      "name": "Peace Bridge",
+      "pic": "places/images/peace.jpg",
+      "lat": 51.054232,
+      "lng": -114.079332
+    },
+	{
+      "name": "Gwacheon Park, Totem Poles",
+      "pic": "places/images/totem.jpg",
+      "lat": 51.279940,
+      "lng": -114.009806
+    },
+	{
+      "name": "Lake Agnes Tea House",
+      "pic": "places/images/teaHouse.jpg",
+      "lat": 51.416254,
+      "lng": -116.244090
+    },
+	{
+      "name": "Statue at the Whyte Museum",
+      "pic": "places/images/bear.jpg",
+      "lat": 51.175111,
+      "lng": -115.572727
+    },
+	{
+      "name": "Glacial Erratic",
+      "pic": "places/images/bear.jpg",
+      "lat": 50.705876,
+      "lng": -114.076577
+    }
+  ]
+}

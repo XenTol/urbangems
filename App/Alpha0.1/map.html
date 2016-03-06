@@ -571,6 +571,7 @@
 
                 function initialize() {
                     //console.log("getting map");
+										parseJSON();
                     myLatLng = new google.maps.LatLng(51.054232, -114.079332);
                     // these set the initial center, zoom and maptype for the map
                     // if it is not specified in the query string
@@ -640,6 +641,19 @@
 									geoXml.parse(filename);
 								}
 
+								function parseJSON() {
+					        console.log("Getting JSON data");
+					        $.getJSON("assets/places.json", function( data ) {
+					            $.each( data, function( key, val ) {
+					                //console.log("key length = " + key.length + " val = " + val.length);
+					              for(i = 0; i < val.length; i++) {
+					                //console.log(val[i].name);
+					                sites.push(val[i]);
+					                }
+					          	});
+					        });
+					      }
+
                 function MapTypeId2UrlValue(maptype) {
                     var urlValue = 'm';
                     switch (maptype) {
@@ -705,29 +719,37 @@
       });
   }
 
-  function AddMarkers(area) {
-      for (var i = 0; i < sites.length; i++){
-        if (google.maps.geometry.poly.containsLocation(sites[i], area)){
-          var marker = new google.maps.Marker({
-            position: sites[i],
-            map: map,
-            title: 'Hello World!',
-						icon: icons.site.icon,
-            animation: google.maps.Animation.DROP
-        	});
-        	marker.addListener('click', function() {
-          	calculateAndDisplayRoute(marker.position);
-        	});
-        	activeSites.push(marker);
-      	}
+	function AddMarkers(area) {
+	    console.log("site length = " + sites.length);
+	    for (var i = 0; i < sites.length; i++){
+	      var pos = new google.maps.LatLng(sites[i].lat, sites[i].lng);
+	      if (google.maps.geometry.poly.containsLocation(pos, area)){
+	        var contentString = sites[i].name;
+	        console.log(contentString);
+	        var marker = new google.maps.Marker({
+	          position: pos,
+	          map: map,
+	          title: sites[i].name,
+	          icon: icons.site.icon,
+	          animation: google.maps.Animation.DROP
+	        });
+        marker.addListener('click', function() {
+					var contentString = this.title;
+					var infowindow = new google.maps.InfoWindow({
+            content: contentString
+          });
+          infowindow.open(map, this);
+        	calculateAndDisplayRoute(this.position);
+        });
+        activeSites.push(marker);
       }
+    }
 	}
 
   function RemoveMakers(area) {
-    	for (var i = 0; i < sites.length; i++){
+    	for (var i = 0; i < activeSites.length; i++){
         if (google.maps.geometry.poly.containsLocation(activeSites[i].getPosition(), area)){
           activeSites[i].setMap(null);
-          activeSites.splice(i,1);
         }
       }
   }

@@ -2,7 +2,7 @@
   "places": [
     {
 	  "id":0,
-	  "desc":"",
+	  "desc":"Calgary’s City Council makes decisions that impact you.  Find out more about City Council and get involved in this decision-making process.",
       "name": "Council Chambers",
       "pic": "places/images/chambers.png",
       "lat": 51.054926,
@@ -10,7 +10,7 @@
     },
     {
 	  "id":1,
-	  "desc":"",
+	  "desc":"ContainR is a village of pop-up venues made up of redesigned and repurposed shipping containers.",
       "name": "ContainR Park",
       "pic": "places/images/containr.png",
       "lat": 51.054926,
@@ -18,14 +18,14 @@
     },
     {
 	  "id":2,
-	  "desc":"",
+	  "desc":"Portions of the hospital which had been demolished controversially in 1973 was converted into a park in 1974, which is what you can see there today.",
       "name": "Rundle Ruins",
-      "pic": "palces/images/rundle.jpg",
+      "pic": "places/images/rundle.jpg",
       "lat": 51.040697,
       "lng": -114.0488
     },
     {
-	  "desc":"",
+	  "desc":"A series of terraces and a stunning grotto-like seating area capture views of the Bow River and surrounding landscapes.",
 	  "id":3,
       "name": "Bow Passage Overlook",
       "pic": "places/images/bowRiver.jpg",
@@ -34,7 +34,7 @@
     },
     {
 	  "id":4,
-	  "desc":"",
+	  "desc":"A mysterious engraving among stones lying in Nosehill Park.",
       "name": "Sun Engraving in Nose Hill",
       "pic": "places/images/sunRock.jpg",
       "lat": 51.11223,
@@ -42,7 +42,7 @@
     },
     {
 	  "id":5,
-	  "desc":"",
+	  "desc":"The Chinese Cultural Centre has remained a focal point for the community and offers cultural activities, arts, and quality programs to the public.",
       "name": "Chinese Cultural Center",
       "pic": "places/images/center.jpg",
       "lat": 51.051398,
@@ -50,7 +50,7 @@
     },
     {
 	  "id":6,
-	  "desc":"",
+	  "desc":"The Peace Bridge, designed by architect Santiago Calatrava, accommodates pedestrians and cyclists crossing the Bow River in Calgary, Alberta.",
       "name": "Peace Bridge",
       "pic": "places/images/peace.jpg",
       "lat": 51.054232,
@@ -58,7 +58,7 @@
     },
 	{
 	  "id":7,
-	  "desc":"",
+	  "desc":"Six handcrafted totem poles stand in Gwacheon Park, commemorates the 10-year relationship between Airdrie and Gwacheon, South Korea.",
       "name": "Gwacheon Park, Totem Poles",
       "pic": "places/images/totem.jpg",
       "lat": 51.279940,
@@ -66,7 +66,7 @@
     },
 	{
 	  "id":8,
-	  "desc":"",
+	  "desc":"Hike to Lake Agnes Tea House, built in 1901 by the Canadian Pacific Railway. You will pass a forested trail, Mirror Lake, and a gorgeous waterfall.",
       "name": "Lake Agnes Tea House",
       "pic": "places/images/teaHouse.jpg",
       "lat": 51.416254,
@@ -74,7 +74,7 @@
     },
 	{
 	  "id":9,
-	  "desc":"",
+	  "desc":"A stone carving of a bear located outside the Whyte Museum. A symbol of strength for residents in the area.",
       "name": "Statue at the Whyte Museum",
       "pic": "places/images/bear.jpg",
       "lat": 51.175111,
@@ -82,9 +82,9 @@
     },
 	{
 	  "id":10,
-	  "desc":"",
+	  "desc":"This rock is a 16,500-tonne boulder that lies on the flat surface of the Canadian Prairies in Alberta.",
       "name": "Glacial Erratic",
-      "pic": "places/images/bear.jpg",
+      "pic": "places/images/rock.jpg",
       "lat": 50.705876,
       "lng": -114.076577
     }

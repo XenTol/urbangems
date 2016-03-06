@@ -22,7 +22,34 @@
 <link type="text/css" rel="alternate stylesheet" media="screen" title="style2" href="assets/css/styleTheme2.css" />
 <link type="text/css" rel="alternate stylesheet" media="screen" title="style3" href="assets/css/styleTheme3.css" />
 <link type="text/css" rel="alternate stylesheet" media="screen" title="style4" href="assets/css/styleTheme4.css" />
+    <style>
+        #sliderContent {
+            height: 340px;
+            width: 455px;
+            overflow: hidden;
+            position: relative;
+        }
 
+        #sliderImgs {
+            float: left;
+            display: inline;
+            padding: 0;
+            margin: 0;
+            width: 1510px;
+            transition-property: transform;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-out;
+            transform: translate(0, 0);
+        }
+
+        #sliderImgs img {
+            padding: 0px;
+            margin: 0;
+            width: 455px;
+            height: 340px;
+            transform: translate(0, 0);
+        }
+    </style>
 </head>
 <body class="leftMenu nav-collapse in">
 <div id="wrapper">
@@ -83,7 +110,6 @@
 										</a>
 										<ul class="dropdown-menu pull-right icon-right arrow">
 												<!--<li><a href="#"><i class="fa fa-user"></i> Profile</a></li>-->
-												<li class="divider"></li>
 												<!--change-->
 												<li><a href="index.html"><i class="fa fa-sign-out"></i> Signout </a></li>
 										</ul>
@@ -342,10 +368,20 @@
 						<h4 class="modal-title">New Location Detected</h4>
 				</div>
 				<!-- //modal-header-->
-				<div class="modal-body" style="text-align:center">
+				<div class="modal-body">
 					<h1><strong>SELFIE!</strong></h1>
+					<br>
+					
+	<div id="sliderContent">
+        <div id="sliderImgs">
+		    <img src="selfies/council2.jpg"/>
+            <img src="selfies/council1.jpg"/>
+            <img src="selfies/council3.jpg"/>
+        </div>
+    </div>
+					
+					
 									<br>
-
 					<button type="button" class="btn btn-theme-inverse btn-block" OnClick="app.takePicture();" style="min-height:100px"><i class="fa fa-camera fa-4x"></i></button>
 
 				</div>
@@ -505,11 +541,72 @@
 <script type="text/javascript" src="assets/plugins/mmenu/jquery.mmenu.js"></script>
 <script type="text/javascript" src="assets/plugins/pluginsForBS/pluginsForBS.js"></script>
 <script type="text/javascript" src="assets/plugins/miscellaneous/miscellaneous.js"></script>
+
+<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+
 <script type="text/javascript" src="assets/js/caplet.custom.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 <script type="text/javascript" src="phonegap.js"></script>
 <script type="text/javascript">app.initialize();</script>
+<script type="text/javascript">
+        var IMG_WIDTH = 460;
+        var currentImg = 0;
+        var maxImages = 3;
+        var speed = 500;
 
+        var imgs;
+
+        var swipeOptions = {
+            triggerOnTouchEnd: true,
+            swipeStatus: swipeStatus,
+            allowPageScroll: "vertical",
+            threshold: 75
+        };
+
+        $(function () {
+            imgs = $("#sliderImgs");
+            imgs.swipe(swipeOptions);
+        });
+
+        function swipeStatus(event, phase, direction, distance) {
+            //If we are moving before swipe, and we are going L or R in X mode, or U or D in Y mode then drag.
+            if (phase == "move" && (direction == "left" || direction == "right")) {
+                var duration = 0;
+
+                if (direction == "left") {
+                    scrollImages((IMG_WIDTH * currentImg) + distance, duration);
+                } else if (direction == "right") {
+                    scrollImages((IMG_WIDTH * currentImg) - distance, duration);
+                }
+
+            } else if (phase == "cancel") {
+                scrollImages(IMG_WIDTH * currentImg, speed);
+            } else if (phase == "end") {
+                if (direction == "right") {
+                    previousImage();
+                } else if (direction == "left") {
+                    nextImage();
+                }
+            }
+        }
+
+        function previousImage() {
+            currentImg = Math.max(currentImg - 1, 0);
+            scrollImages(IMG_WIDTH * currentImg, speed);
+        }
+
+        function nextImage() {
+            currentImg = Math.min(currentImg + 1, maxImages - 1);
+            scrollImages(IMG_WIDTH * currentImg, speed);
+        }
+
+        function scrollImages(distance, duration) {
+            imgs.css("transition-duration", (duration / 1000).toFixed(1) + "s");
+            //inverse the number we set in the css
+            var value = (distance < 0 ? "" : "-") + Math.abs(distance).toString();
+            imgs.css("transform", "translate(" + value + "px,0)");
+        }
+</script>
 <script type="text/javascript">
 var localStorageImages = localStorage.getItem('images');
 if (typeof localStorageImages === 'undefined' || localStorageImages === null){
@@ -723,12 +820,15 @@ function displayImages(){
                 }
 
 								function removeKML() {
+								if(geoXmlDoc !== null){
 									for (var i = 0; i < geoXmlDoc.placemarks.length; i++) {
                                                                             var placemark = geoXmlDoc.placemarks[i];
                                                                             if (placemark.polygon) placemark.polygon.setMap(null);
                                                                             if (placemark.polyline) placemark.polyline.setMap(null);
                                                                             if (placemark.marker) placemark.marker.setMap(null);
                                                                     }
+																	
+								}
 								}
 
     function setKMLbyString(city, type) {

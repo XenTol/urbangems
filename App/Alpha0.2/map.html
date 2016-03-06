@@ -214,7 +214,7 @@
 																</div>
 																<!-- //content > row > col-md-4 -->
 																<div class="col-md-3">
-																		<a  onclick="directionsDisplay.setPanel(document.getElementById('testing'));"class="btn btn-inverse btn-block staticMap"><i class="fa fa-map-signs"></i> &nbsp;Get Directions!</a>
+																		<a  onclick="setDirection()"class="btn btn-inverse btn-block staticMap"><i class="fa fa-map-signs"></i> &nbsp;Get Directions!</a>
 																</div>
 																<div id="testing">
 																</div>
@@ -387,6 +387,11 @@
 				</div>
 				<!-- //modal-body-->
 		</div>
+                
+                <div id="md-direction" class="modal fade md-stickTop">
+                    <div class="modal-body" id="destination"></div>
+                    
+                </div>
 		<!-- //modal-->
 
 
@@ -567,6 +572,11 @@
             imgs = $("#sliderImgs");
             imgs.swipe(swipeOptions);
         });
+        
+        function setDirection() {
+            directionsDisplay.setPanel(document.getElementById('destination'));
+            $('#md-direction').modal('show');
+        }
 
         function swipeStatus(event, phase, direction, distance) {
             //If we are moving before swipe, and we are going L or R in X mode, or U or D in Y mode then drag.
@@ -926,8 +936,9 @@ function displayImages(){
 	function siteFence(){
 		for(var i = 0; i < activeSites.length; i++){
 				var dist = google.maps.geometry.spherical.computeDistanceBetween (currentPosMarker.position, activeSites[i].position);
-				if( dist < 25){
+				if( dist < 100){
 				    //selfie function needs to go here
+                                    console.log("Distance = " + dist); 
 				    localStorage.setItem("selfieLocation", activeSites[i].site.id);
 					$('#md-normal').modal('show');
 				}
@@ -963,7 +974,7 @@ function displayImages(){
 	        var contentString = sites[i].name;
 	        console.log(contentString);
 	        var marker = new google.maps.Marker({
-						site: sites[i],
+		  site: sites[i],
 	          position: pos,
 	          map: map,
 	          title: "",
@@ -973,12 +984,12 @@ function displayImages(){
 					marker.title = marker.site.name;
         	marker.addListener('click', function() {
 						removeKML();
+                                                siteFence();
 						var contentString = this.title;
 						document.getElementById("descP").innerHTML=this.site.desc;
 						document.getElementById("DestName").innerHTML=this.site.name;
 						var infowindow = new google.maps.InfoWindow({
             content: contentString
-            siteFence();
           });
           infowindow.open(map, this);
         	calculateAndDisplayRoute(this.position);

@@ -49,7 +49,16 @@
 												<em><strong>City</strong> List</em> <i class="dropdown-icon fa fa-angle-down"></i>
 											</a>
 											<ul id="myDropdown" class="dropdown-menu pull-right icon-right arrow">
-													<li><a href="#">Calgary</a></li>
+													<li onClick="setKMLbyString('CALGARY', areaType)"><a href="#">Calgary</a></li>
+                          <li onClick="setKMLbyString('AIRDRIE', areaType)"><a href="#">Airdrie</a></li>
+                          <li onClick="setKMLbyString('BANFF', areaType)"><a href="#">Banff</a></li>
+                          <li onClick="setKMLbyString('B_DIAMOND', areaType)"><a href="#">Black Diamond</a></li>
+                          <li onClick="setKMLbyString('CHESTERMERE', areaType)"><a href="#">Chestermere</a></li>
+                          <li onClick="setKMLbyString('COCHRANE', areaType)"><a href="#">Cochrane</a></li>
+                          <li onClick="setKMLbyString('HIGH_RIVER', areaType)"><a href="#">High River</a></li>
+                          <li onClick="setKMLbyString('OKOTOKS', areaType)"><a href="#">Okotoks</a></li>
+                          <li onClick="setKMLbyString('T_VALLEY', areaType)"><a href="#">Turner Valley</a></li>
+
 													<li class="divider"></li>
 											</ul>
 											<!-- //dropdown-menu-->
@@ -125,6 +134,11 @@
 				<div id="Gmap"></div>
 				<div id="mapControl">
 										<section class="panel">
+											<div class="btn-group" data-toggle="buttons">
+												<button id="BOUNDARY" class="btn btn-primary active" onclick="setAreaType('BOUNDARY')">City</button>
+												<button id="QUADRANT" class="btn btn-primary" onclick="setAreaType('QUADRANT')">Quadrants</button>
+												<button id="COMMUNITY" class="btn btn-primary"  onclick="setAreaType('COMMUNITY')">Communities</button>
+											</div>
 												<header class="panel-heading">
 														<h2><strong>Your</strong> Gems </h2>
 														<button onclick="forcePos()">Test</button>
@@ -162,6 +176,7 @@
 																<div class="col-md-3">
 																		<a class="btn btn-inverse btn-block staticMap"><i class="fa fa-fire"></i> &nbsp;Static Maps</a>
 																</div>
+
 																<!-- //content > row > col-md-3 -->
 														</div>
 														<!-- //content > row-->
@@ -483,6 +498,8 @@
 <script type="text/javascript">
 								var directionsService = new google.maps.DirectionsService;
 								var directionsDisplay = new google.maps.DirectionsRenderer;
+								var areaType = 'BOUNDARY';
+								var CurrCity = 'Calgary';
 								var currentPosMarker = null;
                 var geoXml = null;
                 var geoXmlDoc = null;
@@ -493,7 +510,7 @@
                 var infowindow = null;
                 var kmlLayer = null;
                 var datasets = 'datasets/'
-                var filename = datasets + 'Community.kmz';      //kml or kmz file
+                var filename = datasets + 'AirdrieQuadrant.kml';      //kml or kmz file
                 var sites = []; //array of sites
                 var activeSites = [];  //array of current site markers
         				var latLng = null;
@@ -513,7 +530,7 @@
 				        var NEIGHBOURHOOD = 2;
 				        // City
 				        var CALGARY     = 0;
-				        var AIRDRIE      = 1;
+				        var AIRDRIE     = 1;
 				        var BANFF       = 2;
 				        var B_DIAMOND   = 3;
 				        var CHESTERMERE = 4;
@@ -536,7 +553,7 @@
 						        COMMUNITY: 'Community.kmz'
 						      },
 						      AIRDRIE: {
-						        BOUNDARY: 'AirdrieBoundry.kml',
+						        BOUNDARY: 'AirdrieBoundary.kml',
 						        QUADRANT: 'AirdrieQuadrant.kml',
 						        COMMUNITY: 'AirdrieNeighbourhoods.kml'
 						      },
@@ -643,6 +660,7 @@
 										directionsDisplay.setOptions( {suppressMarkers: true});
 
 										parsePolyKML(map, zoom);
+										createCustomControl();
                 };
 
 								//"dummySetKML(datafiles.AIRDRIE.QUADRANT)"
@@ -653,6 +671,57 @@
 									console.log(filename);
 									removeAll();
 									parsePolyKML(map, map.getZoom())
+								}
+
+								function setEnabled(city, type) {
+									console.log("datafiles[" + city + "]["+type+"]");
+									console.log("DATAFILES = " + datafiles[city][type]);
+	                  city.toUpperCase();
+	                  type.toUpperCase();
+										var string = datafiles[city][type];
+	                  if(string != '') {
+	                      return false;
+										} else {
+	                      return true;
+									}
+	              }
+
+								function removeAll() {
+                    map.fitBounds(geoXmlDoc.bounds);
+                    for (var i = 0; i < geoXmlDoc.placemarks.length; i++) {
+                        var placemark = geoXmlDoc.placemarks[i];
+                        if (placemark.polygon) placemark.polygon.setMap(null);
+                        if (placemark.polyline) placemark.polyline.setMap(null);
+                        if (placemark.marker) placemark.marker.setMap(null);
+                    }
+                    for (var i = 0; i < activeSites.length; i++){
+                        activeSites[i].setMap(null);
+                     }
+                }
+
+								function setKMLbyString(city, type) {
+										CurrCity = city;
+                    city = city.toUpperCase();
+										type = type.toUpperCase();
+										var a = setEnabled(city, "BOUNDARY");
+										var b = setEnabled(city, "QUADRANT");
+										var c = setEnabled(city, "COMMUNITY");
+										console.log(a + ", " + b + ", " + c);
+										$('#BOUNDARY').prop('disabled', a).change();
+										$('#QUADRANT').prop('disabled', b).change();
+										$('#COMMUNITY').prop('disabled', c).change();
+                    dummySetKML(datafiles[city][type]);
+                }
+
+								function setAreaType(type){
+									$('#BOUNDARY').prop('class', "btn btn-primary").change();
+									$('#QUADRANT').prop('class', "btn btn-primary").change();
+									$('#COMMUNITY').prop('class', "btn btn-primary").change();
+									setKMLbyString(CurrCity, type);
+									// console.log("Hello");
+									// console.log(type);
+									// btn btn-primary
+									areaType = type;
 								}
 
 								function parsePolyKML(map, zoom) {
@@ -713,6 +782,7 @@
 	    siteFence();
 	}
 
+
 	function errorCallback_highAccuracy(position){
 		alert("Location Not Found");
 	}
@@ -731,6 +801,13 @@
 	function forcePos(){
 		shareLocation();
 	}
+
+	//CUSTOM CONTROL//////////////////////////////////////////////////////////////
+	function createCustomControl(){
+		console.log("creating custom control");
+
+	}
+	//////////////////////////////////////////////////////////////////////////////
 
   function calculateAndDisplayRoute(Where) {
       directionsService.route({
@@ -775,7 +852,7 @@
     }
 	}
 
-  function RemoveMakers(area) {
+  function RemoveMarkers(area) {
     	for (var i = 0; i < activeSites.length; i++){
         if (google.maps.geometry.poly.containsLocation(activeSites[i].getPosition(), area)){
           activeSites[i].setMap(null);
@@ -802,7 +879,7 @@
           if(PolyArr[i].title == poly.title){
             PolyArr.splice(i,1);
             poly.setOptions(normalOptions);
-            RemoveMakers(poly);
+            RemoveMarkers(poly);
             return;
           }
         }

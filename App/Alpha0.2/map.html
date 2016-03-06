@@ -99,7 +99,7 @@
 
 											</ul>
 											<!-- //dropdown-menu-->
-									</li>w
+									</li>
 								<li><a href="#" class="nav-collapse avatar-header">
 												<img alt="" src="assets/img/avatar.png"  class="circle">
 										</a>
@@ -202,6 +202,7 @@
 																<!-- //content > row > col-md-3 -->
 																<div class="col-md-2">
 																		<!-- <div class="input-icon"> <i class="fa fa-search ico"></i> -->
+                                    <div id="PreviewThumbnail"></div>
 																				<p id="descP">Choose a Destination</p>
 																		<!-- </div> -->
 																</div>
@@ -371,23 +372,23 @@
 				<div class="modal-body">
 					<h1><strong>SELFIE!</strong></h1>
 					<br>
-					
+
 	<div id="sliderContent">
         <div id="sliderImgs">
         </div>
     </div>
-					
-					
+
+
 									<br>
 					<button type="button" class="btn btn-theme-inverse btn-block" OnClick="app.takePicture();" style="min-height:100px"><i class="fa fa-camera fa-4x"></i></button>
 
 				</div>
 				<!-- //modal-body-->
 		</div>
-                
+
                 <div id="md-direction" class="modal fade md-stickTop">
                     <div class="modal-body" id="destination"></div>
-                    
+
                 </div>
 		<!-- //modal-->
 
@@ -569,7 +570,7 @@
             imgs = $("#sliderImgs");
             imgs.swipe(swipeOptions);
         });
-        
+
         function setDirection() {
             directionsDisplay.setPanel(document.getElementById('destination'));
             $('#md-direction').modal('show');
@@ -851,7 +852,7 @@ function displayImages(displayModal){
                                                                             if (placemark.polyline) placemark.polyline.setMap(null);
                                                                             if (placemark.marker) placemark.marker.setMap(null);
                                                                     }
-																	
+
 								}
 								}
 
@@ -952,7 +953,7 @@ function displayImages(displayModal){
 				var dist = google.maps.geometry.spherical.computeDistanceBetween (currentPosMarker.position, activeSites[i].position);
 				if( dist < 100){
 				    //selfie function needs to go here
-                   //console.log("Distance = " + dist); 
+                   //console.log("Distance = " + dist);
 				    localStorage.setItem("selfieLocation", activeSites[i].site.id);
 					displayImages(true);
 				}
@@ -1002,6 +1003,7 @@ function displayImages(displayModal){
 						var contentString = this.title;
 						document.getElementById("descP").innerHTML=this.site.desc;
 						document.getElementById("DestName").innerHTML=this.site.name;
+            document.getElementById("PreviewThumbnail").innerHTML="<img src=" + this.site.pic + " width=100 height=100 />";
 						var infowindow = new google.maps.InfoWindow({
             content: contentString
           });
@@ -1017,7 +1019,7 @@ function displayImages(displayModal){
     	for (var i = activeSites.length-1; i > -1; i--){
         if (google.maps.geometry.poly.containsLocation(activeSites[i].getPosition(), area)){
           activeSites[i].setMap(null);
-          activeSites.splice(i, 1); 
+          activeSites.splice(i, 1);
         }
       }
   }

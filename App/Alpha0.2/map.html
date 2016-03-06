@@ -135,9 +135,9 @@
 				<div id="mapControl">
 										<section class="panel">
 											<div class="btn-group" data-toggle="buttons">
-												<button id="BOUNDARY" class="btn btn-primary active" onclick="setAreaType('BOUNDARY')">City</button>
-												<button id="QUADRANT" class="btn btn-primary" onclick="setAreaType('QUADRANT')">Quadrants</button>
-												<button id="COMMUNITY" class="btn btn-primary"  onclick="setAreaType('COMMUNITY')">Communities</button>
+												<button id="BOUNDARY" class="btn btn-theme-inverse active" onclick="setAreaType('BOUNDARY')">City</button>
+												<button id="QUADRANT" class="btn btn-theme-inverse" onclick="setAreaType('QUADRANT')">Quadrants</button>
+												<button id="COMMUNITY" class="btn btn-theme-inverse"  onclick="setAreaType('COMMUNITY')">Communities</button>
 											</div>
 												<header class="panel-heading">
 														<h2><strong>Your</strong> Gems </h2>
@@ -511,7 +511,7 @@ function displayImages(){
 
 								var directionsService = new google.maps.DirectionsService;
 								var directionsDisplay = new google.maps.DirectionsRenderer;
-								var areaType = 'BOUNDARY';
+								var areaType = 'COMMUNITY';
 								var CurrCity = 'Calgary';
 								var currentPosMarker = null;
                 var geoXml = null;
@@ -523,7 +523,7 @@ function displayImages(){
                 var infowindow = null;
                 var kmlLayer = null;
                 var datasets = 'datasets/'
-                var filename = datasets + 'AirdrieQuadrant.kml';      //kml or kmz file
+                var filename = datasets + 'Community.kmz';      //kml or kmz file
                 var sites = []; //array of sites
                 var activeSites = [];  //array of current site markers
         				var latLng = null;
@@ -727,9 +727,9 @@ function displayImages(){
                 }
 
 								function setAreaType(type){
-									$('#BOUNDARY').prop('class', "btn btn-primary").change();
-									$('#QUADRANT').prop('class', "btn btn-primary").change();
-									$('#COMMUNITY').prop('class', "btn btn-primary").change();
+									$('#BOUNDARY').prop('class', "btn btn-theme-inverse").change();
+									$('#QUADRANT').prop('class', "btn btn-theme-inverse").change();
+									$('#COMMUNITY').prop('class', "btn btn-theme-inverse").change();
 									setKMLbyString(CurrCity, type);
 									// console.log("Hello");
 									// console.log(type);
@@ -749,7 +749,7 @@ function displayImages(){
 
 								function parseJSON() {
 					        console.log("Getting JSON data");
-					        $.getJSON("assets/places.json", function( data ) {
+					        $.getJSON("assets/json/places.json", function( data ) {
 					            $.each( data, function( key, val ) {
 					                //console.log("key length = " + key.length + " val = " + val.length);
 					              for(i = 0; i < val.length; i++) {
@@ -984,6 +984,8 @@ function displayImages(){
           };
 
         	placemark.polygon.normalStyle = normalStyle;
+					if (placemark.polygon) placemark.polygon.setOptions(normalOptions);
+					if (placemark.polyline) placemark.polyline.setOptions(normalLineOptions);
 
           polyClick(placemark.polygon, i);
         }

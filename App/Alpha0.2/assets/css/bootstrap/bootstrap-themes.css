@@ -1312,8 +1312,9 @@ label span.icon i {
   background-image: none;
 }
 .btn-theme-inverse.disabled, .btn-theme-inverse.disabled:hover, .btn-theme-inverse.disabled:focus, .btn-theme-inverse.disabled:active, .btn-theme-inverse.disabled.active, .btn-theme-inverse[disabled], .btn-theme-inverse[disabled]:hover, .btn-theme-inverse[disabled]:focus, .btn-theme-inverse[disabled]:active, .btn-theme-inverse[disabled].active, fieldset[disabled] .btn-theme-inverse, fieldset[disabled] .btn-theme-inverse:hover, fieldset[disabled] .btn-theme-inverse:focus, fieldset[disabled] .btn-theme-inverse:active, fieldset[disabled] .btn-theme-inverse.active {
-  background-color: #0aa699;
-  border-color: #0aa699;
+  color: grey;
+  background-color: #62707d;
+  border-color: #62707d;
 }
 .btn-theme-inverse.btn-transparent {
   color: #AAA;

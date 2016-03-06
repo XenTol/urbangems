@@ -47,21 +47,37 @@ var app = {
 
         //console.log('Received Event: ' + id);
     },
+	
+	reload: function(){
+		$.getJSON( "assets/json/images.json", function( data ) {
+		localStorage.setItem("images", JSON.stringify(data));
+		});
+	},
+	
+	upload: function(displayModal){
+		this.reloadImages();
+		var localStorageImages = localStorage.getItem('images');
+		var selfieLocation = localStorage.getItem("selfieLocation");
+		var json = JSON.parse(localStorageImages);
+		var HTML = "";
+		$.each( json[selfieLocation], function( key, val ) {
+		HTML += '<img src="'+val.pic+'" />'
+		});
+		$("#sliderImgs").html(HTML);
+		if(displayModal == true){
+		$('#md-normal').modal('show');
+		}
+	},
 
     takePicture: function() {
     navigator.camera.getPicture( function( imageURI ) {
     alert( imageURI );
 	var localStorageImages = localStorage.getItem('images');
-	if (typeof localStorageImages === 'undefined' || localStorageImages === null){
-	$.getJSON( "assets/json/images.json", function( data ) {
-	localStorage.setItem("images", JSON.stringify(data));
-	});
-	}
 	var obj = JSON.parse(localStorage.getItem("images"));
 	obj[localStorage.getItem("selfieLocation")].push({"pic":imageURI});
 	var newData = JSON.stringify(obj);
 	localStorage.setItem("images", newData);
-    displayImages(false);
+    this.displayImages(false);
         //document.getElementById("pictureslider").innerHTML = tags;
         //document.getElementById("myDropdown").innerHTML = dropdowntags;
       },

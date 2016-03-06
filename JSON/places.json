@@ -1,60 +1,88 @@
 {
   "places": [
     {
+	  "id":0,
+	  "desc":"",
+      "name": "Council Chambers",
+      "pic": "places/images/chambers.png",
+      "lat": 51.054926,
+      "lng": -114.083888
+    },
+    {
+	  "id":1,
+	  "desc":"",
       "name": "ContainR Park",
       "pic": "places/images/containr.png",
       "lat": 51.054926,
       "lng": -114.083888
     },
     {
+	  "id":2,
+	  "desc":"",
       "name": "Rundle Ruins",
-      "pic": "places/images/rundle.jpg",
+      "pic": "palces/images/rundle.jpg",
       "lat": 51.040697,
       "lng": -114.0488
     },
     {
+	  "desc":"",
+	  "id":3,
       "name": "Bow Passage Overlook",
       "pic": "places/images/bowRiver.jpg",
       "lat": 51.042189,
       "lng": -114.017919
     },
     {
+	  "id":4,
+	  "desc":"",
       "name": "Sun Engraving in Nose Hill",
       "pic": "places/images/sunRock.jpg",
       "lat": 51.11223,
       "lng": -114.0951
     },
     {
+	  "id":5,
+	  "desc":"",
       "name": "Chinese Cultural Center",
       "pic": "places/images/center.jpg",
       "lat": 51.051398,
       "lng": -114.065109
     },
     {
+	  "id":6,
+	  "desc":"",
       "name": "Peace Bridge",
       "pic": "places/images/peace.jpg",
       "lat": 51.054232,
       "lng": -114.079332
     },
 	{
+	  "id":7,
+	  "desc":"",
       "name": "Gwacheon Park, Totem Poles",
       "pic": "places/images/totem.jpg",
       "lat": 51.279940,
       "lng": -114.009806
     },
 	{
+	  "id":8,
+	  "desc":"",
       "name": "Lake Agnes Tea House",
       "pic": "places/images/teaHouse.jpg",
       "lat": 51.416254,
       "lng": -116.244090
     },
 	{
+	  "id":9,
+	  "desc":"",
       "name": "Statue at the Whyte Museum",
       "pic": "places/images/bear.jpg",
       "lat": 51.175111,
       "lng": -115.572727
     },
 	{
+	  "id":10,
+	  "desc":"",
       "name": "Glacial Erratic",
       "pic": "places/images/bear.jpg",
       "lat": 50.705876,

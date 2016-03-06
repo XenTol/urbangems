@@ -32,12 +32,12 @@
 		//////////////////////////////////////////////////////////////////////
 		-->
 		<div id="header">
-		
+
 				<div class="logo-area clearfix">
 						<a href="#" class="logo"></a>
 				</div>
 				<!-- //logo-area-->
-				
+
 				<div class="tools-bar">
 						<ul class="nav navbar-nav nav-main-xs">
 								<li><a href="#" class="icon-toolsbar nav-mini"><i class="fa fa-bars"></i></a></li>
@@ -67,10 +67,10 @@
 						</ul>
 				</div>
 				<!-- //tools-bar-->
-				
+
 		</div>
 		<!-- //header-->
-		
+
 		<!--
 		/////////////////////////////////////////////////////////////////////////
 		//////////     SLIDE LEFT CONTENT     //////////
@@ -78,13 +78,13 @@
 		-->
 		<div id="nav">
 				<div id="nav-scroll">
-						
+
 				</div>
 				<!-- //nav-scroller-->
 		</div>
 		<!-- //nav-->
-		
-		
+
+
 		<!--
 		/////////////////////////////////////////////////////////////////////////
 		//////////     TOP SEARCH CONTENT     ///////
@@ -103,17 +103,17 @@
 			</form>
 		</div>
 		<!-- //widget-top-search-->
-		
-		
+
+
 		<!--
 		/////////////////////////////////////////////////////////////////////////
 		//////////     MAIN SHOW CONTENT     //////////
 		//////////////////////////////////////////////////////////////////////
 		-->
 		<div id="main" style="overflow:hidden">
-		
+
 				<div id="Gmap"></div>
-				
+
 				<div id="mapControl">
 										<section class="panel">
 												<header class="panel-heading">
@@ -136,7 +136,7 @@
 																				</nav>
 																		</div>
 																</div>
-																<!-- //content > row > col-md-3 -->	
+																<!-- //content > row > col-md-3 -->
 																<div class="col-md-2">
 																		<div class="input-icon"> <i class="fa fa-search ico"></i>
 																				<input type="text" class="form-control" id="zoom" name="zoom" placeholder="Zoom Level">
@@ -157,12 +157,12 @@
 														<!-- //content > row-->
 												</div>
 										</section>
-				</div>	
+				</div>
 				<!-- //mapControl-->
 		</div>
 		<!-- //main-->
-		
-		
+
+
 		<!--
 		///////////////////////////////////////////////////////////////////
 		//////////     MODAL MAP STATIC     ////////
@@ -189,7 +189,7 @@
 				</div>
 				<!-- //modal-body-->
 		</div>
-		<!-- //modal-->		
+		<!-- //modal-->
 		<!--
 		///////////////////////////////////////////////////////////////////
 		//////////     MODAL MESSAGES     //////////
@@ -289,8 +289,8 @@
 				<!-- //modal-body-->
 		</div>
 		<!-- //modal-->
-		
-		        
+
+
 		<!--
 		//////////////////////////////////////////////////////////////
 		//////////     MODAL NORMAL    //////////
@@ -305,16 +305,16 @@
 				<div class="modal-body" style="text-align:center">
 					<h1><strong>SELFIE!</strong></h1>
 									<br>
-				
+
 					<button type="button" class="btn btn-theme-inverse btn-block" style="min-height:100px"><i class="fa fa-camera fa-4x"></i></button>
 
 				</div>
 				<!-- //modal-body-->
 		</div>
 		<!-- //modal-->
-	
 
-		
+
+
 		<!--
 		//////////////////////////////////////////////////////////////////////////
 		//////////     MODAL NOTIFICATION     //////////
@@ -421,9 +421,9 @@
 				<!-- //modal-body-->
 		</div>
 		<!-- //modal-->
-		
-		
-		
+
+
+
 		<!--
 		//////////////////////////////////////////////////////////////
 		//////////     LEFT NAV MENU     //////////
@@ -436,8 +436,8 @@
 				</ul>
 		</nav>
 		<!-- //nav left menu-->
-		
-		
+
+
 </div>
 <!-- //wrapper-->
 
@@ -447,7 +447,7 @@
 //////////     JAVASCRIPT  LIBRARY     //////////
 /////////////////////////////////////////////////////////////////////
 -->
-		
+
 <!-- Jquery Library -->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.ui.min.js"></script>
@@ -467,6 +467,8 @@
 <script type="text/javascript" src="assets/js/caplet.custom.js"></script>
 
 <script type="text/javascript">
+								var directionsService = new google.maps.DirectionsService;
+								var directionsDisplay = new google.maps.DirectionsRenderer;
                 var geoXml = null;
                 var geoXmlDoc = null;
                 var map = null;
@@ -489,16 +491,91 @@
                     icon: iconBase + 'dot-inside-a-circle_24.svg'
                   }
                 };
+								// Constants
+				        // Enum
+				        var BOUNDARY      = 0;
+				        var QUADRANT      = 1;
+				        var NEIGHBOURHOOD = 2;
+				        // City
+				        var CALGARY     = 0;
+				        var AIRDRIE      = 1;
+				        var BANFF       = 2;
+				        var B_DIAMOND   = 3;
+				        var CHESTERMERE = 4;
+				        var COCHRANE    = 5;
+				        var HIGH_RIVER  = 6;
+				        var OKOTOKS     = 7;
+				        var STRATHMORE  = 8;
+				        var T_VALLEY    = 9;
 
+						    // Index of Names will associate with CONST/loader
+						    var municipal = ["Calgary", "Airdrie", "Banff", "Black Diamond",
+						        "Chestermere", "Cochrane", "High River", "Okotoks",
+						        "Strathmore", "Turner Valley"];
+
+						    // Declare Data Files
+						    var datafiles = {
+						      CALGARY: {
+						        BOUNDARY: 'CALGIS.CITYBOUND_LIMIT.kmz',
+						        QUADRANT: '',
+						        COMMUNITY: 'Community.kmz'
+						      },
+						      AIRDRIE: {
+						        BOUNDARY: 'AirdrieBoundry.kml',
+						        QUADRANT: 'AirdrieQuadrant.kml',
+						        COMMUNITY: 'AirdrieNeighbourhoods.kml'
+						      },
+						      BANFF: {
+						        BOUNDARY: 'BanffBoundary.kml',
+						        QUADRANT: '',
+						        COMMUNITY: ''
+						      },
+						       B_DIAMOND: {
+						        BOUNDARY: 'BlackDiamondBoundary.kml',
+						        QUADRANT: '',
+						        COMMUNITY: ''
+						      },
+						       CHESTERMERE: {
+						        BOUNDARY: 'ChestermereBoundary.kml',
+						        QUADRANT: '',
+						        COMMUNITY: 'ChestermereNeighbourhoods.kml'
+						      },
+						       COCHRANE: {
+						        BOUNDARY: 'CochraneBoundary.kml',
+						        QUADRANT: '',
+						        COMMUNITY: 'CochraneNeighbourhoods.kml'
+						      },
+						       HIGH_RIVER: {
+						        BOUNDARY: 'HighRiverBoundary.kml',
+						        QUADRANT: '',
+						        COMMUNITY: ''
+						      },
+						       OKOTOKS: {
+						        BOUNDARY: 'OkotoksBoundary.kml',
+						        QUADRANT: '',
+						        COMMUNITY: ''
+						      },
+						       STRATHMORE: {
+						        BOUNDARY: '',
+						        QUADRANT: '',
+						        COMMUNITY: ''
+						      },
+						      T_VALLEY: {
+						        BOUNDARY: 'TurnerValleyBoundary.kml',
+						        QUADRANT: '',
+						        COMMUNITY: ''
+						      }
+
+						    };
                 var OnClickHandler;
 
                 function initialize() {
                     //console.log("getting map");
-                    myLatLng = new google.maps.LatLng(39.8000959563484, -89.549560546875);
+                    myLatLng = new google.maps.LatLng(51.054232, -114.079332);
                     // these set the initial center, zoom and maptype for the map
                     // if it is not specified in the query string
-                    var lat = 37.422104808;
-                    var lng = -122.0838851;
+                    var lat = 51.054232;
+                    var lng = -114.079332;
                     var zoom = 18;
                     var maptype = google.maps.MapTypeId.ROADMAP;
 
@@ -545,14 +622,23 @@
                     map = new google.maps.Map(document.getElementById("Gmap"),
                           myOptions);
 
-                    geoXml = new geoXML3.parser({
-                        map: map,
-                        zoom: myGeoXml3Zoom,
-                        markerOptions: { optimized: false },
-                        afterParse: useTheData
-                    });
-                    geoXml.parse(filename);
+										//setup the direction display
+										directionsDisplay.setMap(map);
+										directionsDisplay.setOptions( {suppressMarkers: true});
+
+
+										parsePolyKML(map, zoom);
                 };
+
+								function parsePolyKML(map, zoom) {
+									geoXml = new geoXML3.parser({
+											map: map,
+											zoom: myGeoXml3Zoom,
+											markerOptions: { optimized: false },
+											afterParse: useTheData
+									});
+									geoXml.parse(filename);
+								}
 
                 function MapTypeId2UrlValue(maptype) {
                     var urlValue = 'm';
@@ -578,17 +664,16 @@
         }
 
 	function successCallback(position){
-            latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-          //displays the marker on the map
-
-          var marker = new google.maps.Marker({
-            position: latLng,
-            map: map,
-            title: 'Hello World!',
-            icon: iconBase + 'dot-inside-a-circle_24.svg',
-            animation: google.maps.Animation.DROP
-          });
-          calcPosition();
+      latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+			//displays the marker on the map
+	    var marker = new google.maps.Marker({
+	      position: latLng,
+	      map: map,
+	      title: 'Hello World!',
+	      icon: icons.self.icon,
+	      animation: google.maps.Animation.DROP
+	    });
+	    calcPosition();
 	}
 
 	function errorCallback_highAccuracy(position){
@@ -596,191 +681,186 @@
 	}
 
 	function calcPosition(){
-            //console.log("calcPosition");
-            //TEST MARKERS////////////////////////////////////////////////////////
-            var latLngA = new google.maps.LatLng(51.048615, -114.070846);
-            var latLngB = new google.maps.LatLng(51.129614, -114.150232);
-            sites.push(latLngA);
-            sites.push(latLngB);
-          //////////////////////////////////////////////////////////////////////
+      //console.log("calcPosition");
+      //TEST MARKERS////////////////////////////////////////////////////////
+      var latLngA = new google.maps.LatLng(51.048615, -114.070846);
+      var latLngB = new google.maps.LatLng(51.129614, -114.150232);
+      sites.push(latLngA);
+      sites.push(latLngB);
+      //////////////////////////////////////////////////////////////////////
 
-            var distance = google.maps.geometry.spherical.computeDistanceBetween (latLngA, latLng) / 1000;
-            //console.log(distance.toString());
-             //console.log(geoXmlDoc.placemarks[0].polygon);
-        }
+      var distance = google.maps.geometry.spherical.computeDistanceBetween (latLngA, latLng) / 1000;
+      //console.log(distance.toString());
+      //console.log(geoXmlDoc.placemarks[0].polygon);
+  }
 
-        function calculateAndDisplayRoute(directionsService, directionsDisplay, Where) {
-            var latLngA = new google.maps.LatLng(51.048615, -114.070846);
-            directionsService.route({
-              origin: latLng,
-              destination: Where,
-              travelMode: google.maps.TravelMode.WALKING
-            }, function(response, status) {
-              if (status === google.maps.DirectionsStatus.OK) {
-                directionsDisplay.setDirections(response);
-              } else {
-                window.alert('Directions request failed due to ' + status);
-              }
-            });
-         }
+  function calculateAndDisplayRoute(Where) {
+      directionsService.route({
+      	origin: latLng,
+        destination: Where,
+        travelMode: google.maps.TravelMode.WALKING
+      	}, function(response, status) {
+        	if (status === google.maps.DirectionsStatus.OK) {
+          	directionsDisplay.setDirections(response);
+        	} else {
+          	window.alert('Directions request failed due to ' + status);
+        	}
+      });
+  }
 
-        function AddMarkers(area) {
-            for (var i = 0; i < sites.length; i++){
-                if (google.maps.geometry.poly.containsLocation(sites[i], area)){
-                  var marker = new google.maps.Marker({
-                    position: sites[i],
-                    map: map,
-                    title: 'Hello World!',
-                    icon: iconBase + 'diamond_24.svg',
-                    animation: google.maps.Animation.DROP
-                  });
-                  marker.addListener('click', function() {
-                            var directionsService = new google.maps.DirectionsService;
-                            var directionsDisplay = new google.maps.DirectionsRenderer;
-                            directionsDisplay.setMap(map);
-                            calculateAndDisplayRoute(directionsService, directionsDisplay, marker.position);
-                  });
-
-                  activeSites.push(marker);
-                }
-            }
+  function AddMarkers(area) {
+      for (var i = 0; i < sites.length; i++){
+        if (google.maps.geometry.poly.containsLocation(sites[i], area)){
+          var marker = new google.maps.Marker({
+            position: sites[i],
+            map: map,
+            title: 'Hello World!',
+						icon: icons.site.icon,
+            animation: google.maps.Animation.DROP
+        	});
+        	marker.addListener('click', function() {
+          	calculateAndDisplayRoute(marker.position);
+        	});
+        	activeSites.push(marker);
+      	}
+      }
 	}
 
-        function RemoveMakers(area) {
-          for (var i = 0; i < sites.length; i++){
-              if (google.maps.geometry.poly.containsLocation(activeSites[i].getPosition(), area)){
-                activeSites[i].setMap(null);
-                activeSites.splice(i,1);
-              }
+  function RemoveMakers(area) {
+    	for (var i = 0; i < sites.length; i++){
+        if (google.maps.geometry.poly.containsLocation(activeSites[i].getPosition(), area)){
+          activeSites[i].setMap(null);
+          activeSites.splice(i,1);
+        }
+      }
+  }
+
+  var PolyArr = []; // This will hold all the polygon data
+  var text = "";
+  function checkIn(poly) {
+    for(var i = 0; i < PolyArr.length; i++){
+      if(PolyArr[i].title == poly.title){
+        return true;
+      }
+    }
+  }
+
+  function polyClick(poly, polyNum) {
+    	google.maps.event.addListener(poly, "click", function () {
+        poly.setOptions(highlightOptions);
+
+        var string ="";
+        for(var i = 0; i < PolyArr.length; i++){
+          if(PolyArr[i].title == poly.title){
+            PolyArr.splice(i,1);
+            poly.setOptions(normalOptions);
+            RemoveMakers(poly);
+            return;
           }
         }
+        AddMarkers(poly);
+        PolyArr.push(poly);
 
-        //var Selected = [];  //Removed for now
-        var PolyArr = []; // This will hold all the polygon data
-        var text = "";
-        function checkIn(poly) {
-          for(var i = 0; i < PolyArr.length; i++){
-            if(PolyArr[i].title == poly.title){
-              return true;
-            }
+      	});
+  }
+
+  function kmlColor(kmlIn) {
+      var kmlColor = {};
+      if (kmlIn) {
+        aa = kmlIn.substr(0, 2);
+        bb = kmlIn.substr(2, 2);
+        gg = kmlIn.substr(4, 2);
+        rr = kmlIn.substr(6, 2);
+        kmlColor.color = "#" + rr + gg + bb;
+        kmlColor.opacity = parseInt(aa, 16) / 256;
+      } else {
+        // defaults
+        kmlColor.color = "blue";
+        kmlColor.opacity = 0.0;
+      }
+      return kmlColor;
+  }
+
+	var highlightOptions = { fillColor: "#16e9aa", strokeColor: "#000000", fillOpacity: 0.4, strokeWidth: 5 };
+  var highlightLineOptions = { strokeColor: "#a2f6dd", strokeWidth: 5 };
+	var normalOptions = { fillColor: "#16e9aa", strokeColor: "#000000", fillOpacity: 0.0, strokeWidth: 5 };
+	var normalLineOptions = { strokeColor: "#a2f6dd", strokeWidth: 5 };
+  function kmlHighlightPoly(pm) {
+      for (var i = 0; i < geoXmlDoc.placemarks.length; i++) {
+        var placemark = geoXmlDoc.placemarks[i];
+        if (i == pm) {
+          if (placemark.polygon) placemark.polygon.setOptions(highlightOptions);
+          if (placemark.polyline) placemark.polyline.setOptions(highlightLineOptions);
+        } else {
+          if (placemark.polygon) placemark.polygon.setOptions(normalOptions);
+          if (placemark.polyline) placemark.polyline.setOptions(normalLineOptions);
+        }
+  		}
+  }
+
+	function kmlUnHighlightPoly(pm) {
+      for (var i = 0; i < geoXmlDoc.placemarks.length; i++) {
+        if (i == pm) {
+          var placemark = geoXmlDoc.placemarks[i];
+          if (placemark.polygon) placemark.polygon.setOptions(normalOptions);
+          if (placemark.polyline) placemark.polyline.setOptions(normalLineOptions);
+        }
+      }
+  }
+
+	function showAll() {
+      map.fitBounds(geoXmlDoc.bounds);
+      for (var i = 0; i < geoXmlDoc.placemarks.length; i++) {
+        var placemark = geoXmlDoc.placemarks[i];
+        if (placemark.polygon) placemark.polygon.setMap(map);
+        if (placemark.polyline) placemark.polyline.setMap(map);
+        if (placemark.marker) placemark.marker.setMap(map);
+      }
+  }
+
+  function useTheData(doc) {
+    	var currentBounds = map.getBounds();
+      if (!currentBounds) currentBounds = new google.maps.LatLngBounds();
+      // Geodata handling goes here, using JSON properties of the doc object
+      sidebarHtml = '<table><tr><td><a href="javascript:showAll();">Show All</a></td></tr>';
+      //  var sidebarHtml = '<table>';
+			//console.log("assign the xmldoc")
+      geoXmlDoc = doc[doc.length -1];
+      for (var i = 0; i < geoXmlDoc.placemarks.length; i++) {
+        //console.log("in log");
+        // console.log(doc[0].markers[i].title);
+        var placemark = geoXmlDoc.placemarks[i];
+        if (placemark.polygon) {
+          if (currentBounds.intersects(placemark.polygon.bounds)) {
+            //makeSidebarPolygonEntry(i);
+          }
+          var kmlStrokeColor = kmlColor(placemark.style.color);
+          var kmlFillColor = kmlColor(placemark.style.fillcolor);
+          var normalStyle = {
+            strokeColor: kmlStrokeColor.color,
+            strokeWeight: placemark.style.width,
+            strokeOpacity: kmlStrokeColor.opacity,
+            fillColor: kmlFillColor.color,
+            fillOpacity: kmlFillColor.opacity
+          };
+
+        	placemark.polygon.normalStyle = normalStyle;
+
+          polyClick(placemark.polygon, i);
+        }
+      	if (placemark.marker) {
+          if (currentBounds.contains(placemark.marker.getPosition())) {
+            makeSidebarEntry(i);
           }
         }
+        /*    doc[0].markers[i].setVisible(false); */
+      }
 
-        function polyClick(poly, polyNum) {
-            google.maps.event.addListener(poly, "click", function () {
-              poly.setOptions(highlightOptions);
+    	shareLocation(); //finally get the location
+			//console.log("shared location");
+  };
 
-              //console.log("Array Length = " + PolyArr.length);
-              var string ="";
-              for(var i = 0; i < PolyArr.length; i++){
-                if(PolyArr[i].title == poly.title){
-                  PolyArr.splice(i,1);
-                  poly.setOptions(poly.normalStyle);
-                  RemoveMakers(poly);
-                  return;
-                }
-              }
-              AddMarkers(poly);
-              PolyArr.push(poly);
-
-            });
-        }
-
-                function kmlColor(kmlIn) {
-                    var kmlColor = {};
-                    if (kmlIn) {
-                        aa = kmlIn.substr(0, 2);
-                        bb = kmlIn.substr(2, 2);
-                        gg = kmlIn.substr(4, 2);
-                        rr = kmlIn.substr(6, 2);
-                        kmlColor.color = "#" + rr + gg + bb;
-                        kmlColor.opacity = parseInt(aa, 16) / 256;
-                    } else {
-                        // defaults
-                        kmlColor.color = "blue";
-                        kmlColor.opacity = 0.0;
-                    }
-                    return kmlColor;
-                }
-                var highlightOptions = { fillColor: "#16e9aa", strokeColor: "#a2f6dd", fillOpacity: 0.4, strokeWidth: 10 };
-                var highlightLineOptions = { strokeColor: "#a2f6dd", strokeWidth: 10 };
-                function kmlHighlightPoly(pm) {
-                    for (var i = 0; i < geoXmlDoc.placemarks.length; i++) {
-                        var placemark = geoXmlDoc.placemarks[i];
-                        if (i == pm) {
-                            if (placemark.polygon) placemark.polygon.setOptions(highlightOptions);
-                            if (placemark.polyline) placemark.polyline.setOptions(highlightLineOptions);
-                        } else {
-                            if (placemark.polygon) placemark.polygon.setOptions(placemark.polygon.normalStyle);
-                            if (placemark.polyline) placemark.polyline.setOptions(placemark.polyline.normalStyle);
-                        }
-                    }
-                }
-                function kmlUnHighlightPoly(pm) {
-                    for (var i = 0; i < geoXmlDoc.placemarks.length; i++) {
-                        if (i == pm) {
-                            var placemark = geoXmlDoc.placemarks[i];
-                            if (placemark.polygon) placemark.polygon.setOptions(placemark.polygon.normalStyle);
-                            if (placemark.polyline) placemark.polyline.setOptions(placemark.polyline.normalStyle);
-                        }
-                    }
-                }
-                function showAll() {
-                    map.fitBounds(geoXmlDoc.bounds);
-                    for (var i = 0; i < geoXmlDoc.placemarks.length; i++) {
-                        var placemark = geoXmlDoc.placemarks[i];
-                        if (placemark.polygon) placemark.polygon.setMap(map);
-                        if (placemark.polyline) placemark.polyline.setMap(map);
-                        if (placemark.marker) placemark.marker.setMap(map);
-                    }
-                }
-
-                function useTheData(doc) {
-					          //console.log("in useTheData");
-                    var currentBounds = map.getBounds();
-                    if (!currentBounds) currentBounds = new google.maps.LatLngBounds();
-                    // Geodata handling goes here, using JSON properties of the doc object
-                    sidebarHtml = '<table><tr><td><a href="javascript:showAll();">Show All</a></td></tr>';
-                    //  var sidebarHtml = '<table>';
-					          //console.log("assign the xmldoc")
-                    geoXmlDoc = doc[0];
-                    for (var i = 0; i < geoXmlDoc.placemarks.length; i++) {
-                      //console.log("in log");
-                        // console.log(doc[0].markers[i].title);
-                        var placemark = geoXmlDoc.placemarks[i];
-                        if (placemark.polygon) {
-                            if (currentBounds.intersects(placemark.polygon.bounds)) {
-                                //makeSidebarPolygonEntry(i);
-                            }
-                            var kmlStrokeColor = kmlColor(placemark.style.color);
-                            var kmlFillColor = kmlColor(placemark.style.fillcolor);
-                            var normalStyle = {
-                                strokeColor: kmlStrokeColor.color,
-                                strokeWeight: placemark.style.width,
-                                strokeOpacity: kmlStrokeColor.opacity,
-                                fillColor: kmlFillColor.color,
-                                fillOpacity: kmlFillColor.opacity
-                            };
-
-                            placemark.polygon.normalStyle = normalStyle;
-
-                            polyClick(placemark.polygon, i);
-                        }
-
-                        if (placemark.marker) {
-                            if (currentBounds.contains(placemark.marker.getPosition())) {
-                                makeSidebarEntry(i);
-                            }
-                        }
-
-                        /*    doc[0].markers[i].setVisible(false); */
-                    }
-
-                    shareLocation(); //finally get the location
-					//console.log("shared location");
-                };
-                initialize();
-
+	initialize();
 
   </script>
 

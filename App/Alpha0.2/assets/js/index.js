@@ -80,24 +80,5 @@ var app = {
 toggle between hiding and showing the dropdown content */
   myFunction: function() {
     document.getElementById("myDropdown").classList.toggle("show");
-  },
-
-  getPlaces: function(){
-      $.getJSON("places.json", function(potentialJson){
-
-      var screwit = JSON.stringify(potentialJson);
-
-      localStorage.setItem("convertThis", screwit);
-    });
-
-    var obj = JSON.parse(localStorage.getItem("convertThis"));
-    var table = "";
-
-    for(i = 0; i < counter; i++){
-    //  table = table + "<table><tr><td><img src='" + obj['places'][i]['pic'] + "' alt='Upload image' /></td><td>" + obj['places'][i]['name'] + "</td></tr></table>";
-      table = table + "<li><a href="#"><table><tr><td><img src='" + obj['places'][i]['pic'] + "' alt='Upload image' /></td><td>" + obj['places'][i]['name'] + "</td></tr></table></a></li><li class='divider'></li>"
-    }
-    document.getElementById("myDropdown").innerHTML = table;
-
   }
 };

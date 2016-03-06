@@ -374,9 +374,6 @@
 					
 	<div id="sliderContent">
         <div id="sliderImgs">
-		    <img src="selfies/council2.jpg"/>
-            <img src="selfies/council1.jpg"/>
-            <img src="selfies/council3.jpg"/>
         </div>
     </div>
 					
@@ -512,7 +509,7 @@
 		-->
 		<nav id="menu" data-search="close">
 				<ul>
-						<li ><span><a href="#" data-toggle="modal" data-target="#md-normal"><i class="icon  fa fa-laptop"></i> Dashboard</a></span>
+						<li ><span><a href="#" onclick="displayImages();"><i class="icon  fa fa-laptop"></i> Dashboard</a></span>
 							<li><span><a href="Leaderboard.html"><i class="icon fa fa-trophy"></i> Leaderboard</a></span></li>
 						</li>
 				</ul>
@@ -626,8 +623,23 @@ $.getJSON( "assets/json/images.json", function( data ) {
 }
 localStorage.setItem("selfieLocation", 0);
 
+function reloadImages(){
+		$.getJSON( "assets/json/images.json", function( data ) {
+		localStorage.setItem("images", JSON.stringify(data));
+		});
+}
+
 function displayImages(){
-	alert(localStorage.getItem("images"));
+		reloadImages();
+		var localStorageImages = localStorage.getItem('images');
+		var selfieLocation = localStorage.getItem("selfieLocation");
+		var json = JSON.parse(localStorageImages);
+		var HTML = "";
+		$.each( json[selfieLocation], function( key, val ) {
+		HTML += '<img src="'+val.pic+'" />'
+		});
+		$("#sliderImgs").html(HTML);
+		$('#md-normal').modal('show');
 }
 
 
@@ -802,9 +814,9 @@ function displayImages(){
 								//"dummySetKML(datafiles.AIRDRIE.QUADRANT)"
 								//Dummy function to
 								function dummySetKML(KMLfilename) {
-									console.log(map.features);
+									//console.log(map.features);
 									filename = datasets + KMLfilename;
-									console.log(filename);
+									//console.log(filename);
 									removeAll();
 									parsePolyKML(map, map.getZoom())
 								}
@@ -848,7 +860,7 @@ function displayImages(){
             var a = setEnabled(city, "BOUNDARY");
             var b = setEnabled(city, "QUADRANT");
             var c = setEnabled(city, "COMMUNITY");
-            console.log(a + ", " + b + ", " + c);
+            //console.log(a + ", " + b + ", " + c);
             $('#BOUNDARY').prop('disabled', a).change();
             $('#QUADRANT').prop('disabled', b).change();
             $('#COMMUNITY').prop('disabled', c).change();
@@ -877,7 +889,7 @@ function displayImages(){
 								}
 
 								function parseJSON() {
-					        console.log("Getting JSON data");
+					        //console.log("Getting JSON data");
 					        $.getJSON("assets/json/places.json", function( data ) {
 					            $.each( data, function( key, val ) {
 					                //console.log("key length = " + key.length + " val = " + val.length);
@@ -938,9 +950,9 @@ function displayImages(){
 				var dist = google.maps.geometry.spherical.computeDistanceBetween (currentPosMarker.position, activeSites[i].position);
 				if( dist < 100){
 				    //selfie function needs to go here
-                                    console.log("Distance = " + dist); 
+                   //console.log("Distance = " + dist); 
 				    localStorage.setItem("selfieLocation", activeSites[i].site.id);
-					$('#md-normal').modal('show');
+					displayImages();
 				}
 		}
   }
@@ -967,12 +979,12 @@ function displayImages(){
   }
 
 	function AddMarkers(area) {
-	    console.log("site length = " + sites.length);
+	    //console.log("site length = " + sites.length);
 	    for (var i = 0; i < sites.length; i++){
 	      var pos = new google.maps.LatLng(sites[i].lat, sites[i].lng);
 	      if (google.maps.geometry.poly.containsLocation(pos, area)){
 	        var contentString = sites[i].name;
-	        console.log(contentString);
+	        //console.log(contentString);
 	        var marker = new google.maps.Marker({
 		  site: sites[i],
 	          position: pos,

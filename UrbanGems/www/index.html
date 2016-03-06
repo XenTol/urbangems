@@ -17,6 +17,93 @@
     specific language governing permissions and limitations
     under the License.
 -->
+<style type="text/css">
+.container {
+  position: relative;
+  height: 660px;
+  width: 960px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.container a {
+  float: left;
+  margin: 20px;
+}
+
+.big {
+  position: absolute;
+  top: 260px;
+  left: 20px;
+}
+.big {
+  position: absolute;
+  top: 900px;
+  left: 20px;
+
+  -webkit-transition: top 1s ease;
+  -moz-transition: top 1s ease;
+  -o-transition: top 1s ease;
+  -ms-transition: top 1s ease;
+  transition: top 1s ease;
+}
+.featured {
+  top: 260px;
+  left: 20px;
+  z-index: -3;
+}
+a:hover .thumb {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
+
+a:hover .big {
+  top: 260px;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+</style>
 <html>
     <head>
         <meta charset="utf-8" />
@@ -27,6 +114,11 @@
     </head>
     <body>
         <div class="app">
+          <div class="dropdown">
+            <button onclick="app.myFunction();" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+            </div>
+          </div>
             <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
@@ -36,7 +128,13 @@
 
                 <button onclick="app.takePicture();">Take Picture</button>
             </div>
+            <div class="container" id="pictureslider">
+            </div>
+            <a href="#">
+            <img class="big featured" src="featured.jpg">
+          </a>
         </div>
+        <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

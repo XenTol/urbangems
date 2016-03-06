@@ -657,10 +657,7 @@
                 }
 
         function shareLocation(){
-                //console.log("getting location");
-                if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(successCallback, errorCallback_highAccuracy, {maximumAge:600000, timeout:5000, enableHighAccuracy: true});
-                }
+                navigator.geolocation.getCurrentPosition(successCallback, errorCallback_highAccuracy, {maximumAge:10000, timeout:5000, enableHighAccuracy: true});
         }
 
 	function successCallback(position){
@@ -677,7 +674,7 @@
 	}
 
 	function errorCallback_highAccuracy(position){
-
+		alert("Location Not Found");
 	}
 
 	function calcPosition(){

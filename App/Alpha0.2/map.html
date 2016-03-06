@@ -306,7 +306,7 @@
 					<h1><strong>SELFIE!</strong></h1>
 									<br>
 
-					<button type="button" class="btn btn-theme-inverse btn-block" style="min-height:100px"><i class="fa fa-camera fa-4x"></i></button>
+					<button type="button" class="btn btn-theme-inverse btn-block" onclick="app.takePicture();" style="min-height:100px"><i class="fa fa-camera fa-4x"></i></button>
 
 				</div>
 				<!-- //modal-body-->
@@ -465,6 +465,10 @@
 <script type="text/javascript" src="assets/plugins/pluginsForBS/pluginsForBS.js"></script>
 <script type="text/javascript" src="assets/plugins/miscellaneous/miscellaneous.js"></script>
 <script type="text/javascript" src="assets/js/caplet.custom.js"></script>
+<script type="text/javascript" src="assets/js/index.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript">app.initialize();</script>
+
 
 <script type="text/javascript">
 								var directionsService = new google.maps.DirectionsService;
@@ -708,7 +712,7 @@
 				var dist = google.maps.geometry.spherical.computeDistanceBetween (currentPosMarker.position, activeSites[i].position);
 				if( dist < 25){
 					//selfie function needs to go here
-					//lemmeTakeASelfie();
+					$('#md-normal').modal('show');
 				}
 		}
   }

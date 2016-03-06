@@ -46,18 +46,18 @@
 								<li><button class="btn btn-circle btn-header-search" ><i class="fa fa-search"></i></button></li>
 									<li class="dropdown" >
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
-												<em><strong>City</strong> List</em> <i class="dropdown-icon fa fa-angle-down"></i>
+												<em id="selectedCity">CALGARY</em> <i class="dropdown-icon fa fa-angle-down"></i>
 											</a>
 											<ul id="myDropdown" class="dropdown-menu pull-right icon-right arrow">
 													<li onClick="setKMLbyString('CALGARY', 'BOUNDARY')"><a href="#">Calgary</a></li>
-                          <li onClick="setKMLbyString('AIRDRIE', 'BOUNDARY')"><a href="#">Airdrie</a></li>
-                          <li onClick="setKMLbyString('BANFF', 'BOUNDARY')"><a href="#">Banff</a></li>
-                          <li onClick="setKMLbyString('B_DIAMOND', 'BOUNDARY')"><a href="#">Black Diamond</a></li>
-                          <li onClick="setKMLbyString('CHESTERMERE', 'BOUNDARY')"><a href="#">Chestermere</a></li>
-                          <li onClick="setKMLbyString('COCHRANE', 'BOUNDARY')"><a href="#">Cochrane</a></li>
-                          <li onClick="setKMLbyString('HIGH_RIVER', 'BOUNDARY')"><a href="#">High River</a></li>
-                          <li onClick="setKMLbyString('OKOTOKS', 'BOUNDARY')"><a href="#">Okotoks</a></li>
-                          <li onClick="setKMLbyString('T_VALLEY', 'BOUNDARY')"><a href="#">Turner Valley</a></li>
+                                                                                                        <li onClick="setKMLbyString('AIRDRIE', 'BOUNDARY')"><a href="#">Airdrie</a></li>
+                                                                                                        <li onClick="setKMLbyString('BANFF', 'BOUNDARY')"><a href="#">Banff</a></li>
+                                                                                                        <li onClick="setKMLbyString('B_DIAMOND', 'BOUNDARY')"><a href="#">Black Diamond</a></li>
+                                                                                                        <li onClick="setKMLbyString('CHESTERMERE', 'BOUNDARY')"><a href="#">Chestermere</a></li>
+                                                                                                        <li onClick="setKMLbyString('COCHRANE', 'BOUNDARY')"><a href="#">Cochrane</a></li>
+                                                                                                        <li onClick="setKMLbyString('HIGH_RIVER', 'BOUNDARY')"><a href="#">High River</a></li>
+                                                                                                        <li onClick="setKMLbyString('OKOTOKS', 'BOUNDARY')"><a href="#">Okotoks</a></li>
+                                                                                                        <li onClick="setKMLbyString('T_VALLEY', 'BOUNDARY')"><a href="#">Turner Valley</a></li>
 
 													<li class="divider"></li>
 											</ul>
@@ -512,7 +512,7 @@ function displayImages(){
 								var directionsService = new google.maps.DirectionsService;
 								var directionsDisplay = new google.maps.DirectionsRenderer;
 								var areaType = 'COMMUNITY';
-								var currCity = 'Calgary';
+								var currCity = 'CALGARY';
 								var currentPosMarker = null;
                 var geoXml = null;
                 var geoXmlDoc = null;
@@ -673,7 +673,7 @@ function displayImages(){
 										directionsDisplay.setOptions( {suppressMarkers: true});
 
 										parsePolyKML(map, zoom);
-										createCustomControl();
+										
 										setKMLbyString(currCity, areaType);
                 };
 
@@ -687,19 +687,19 @@ function displayImages(){
 									parsePolyKML(map, map.getZoom())
 								}
 
-								function setEnabled(city, type) {
-									city.toUpperCase();
-									type.toUpperCase();
-										var string = datafiles[city][type];
-	                  if(string != '') {
-	                      return false;
-										} else {
-	                      return true;
-									}
+                    function setEnabled(city, type) {
+                        city.toUpperCase();
+                        type.toUpperCase();
+                        var string = datafiles[city][type];
+                        if(string !== '') {
+                            return false;
+                        } else {
+                            return true;
+                        }
 	              }
 
-								function removeAll() {
-                    map.fitBounds(geoXmlDoc.bounds);
+                    function removeAll() {
+                    //map.fitBounds(geoXmlDoc.bounds);
                     removeKML();
                     for (var i = 0; i < activeSites.length; i++){
                         activeSites[i].setMap(null);
@@ -709,28 +709,28 @@ function displayImages(){
 
 								function removeKML() {
 									for (var i = 0; i < geoXmlDoc.placemarks.length; i++) {
-											var placemark = geoXmlDoc.placemarks[i];
-											if (placemark.polygon) placemark.polygon.setMap(null);
-											if (placemark.polyline) placemark.polyline.setMap(null);
-											if (placemark.marker) placemark.marker.setMap(null);
-									}
+                                                                            var placemark = geoXmlDoc.placemarks[i];
+                                                                            if (placemark.polygon) placemark.polygon.setMap(null);
+                                                                            if (placemark.polyline) placemark.polyline.setMap(null);
+                                                                            if (placemark.marker) placemark.marker.setMap(null);
+                                                                    }
 								}
 
-								function setKMLbyString(city, type) {
-										currCity = city;
-                    city = city.toUpperCase();
-										type = type.toUpperCase();
-										var a = setEnabled(city, "BOUNDARY");
-										var b = setEnabled(city, "QUADRANT");
-										var c = setEnabled(city, "COMMUNITY");
-										console.log(a + ", " + b + ", " + c);
-										$('#BOUNDARY').prop('disabled', a).change();
-										$('#QUADRANT').prop('disabled', b).change();
-										$('#COMMUNITY').prop('disabled', c).change();
-										directionsDisplay.setMap(null);
-                    dummySetKML(datafiles[city][type]);
-
-                }
+    function setKMLbyString(city, type) {
+        currCity = city;
+        city = city.toUpperCase();
+            type = type.toUpperCase();
+            var a = setEnabled(city, "BOUNDARY");
+            var b = setEnabled(city, "QUADRANT");
+            var c = setEnabled(city, "COMMUNITY");
+            console.log(a + ", " + b + ", " + c);
+            $('#BOUNDARY').prop('disabled', a).change();
+            $('#QUADRANT').prop('disabled', b).change();
+            $('#COMMUNITY').prop('disabled', c).change();
+            directionsDisplay.setMap(null);
+            dummySetKML(datafiles[city][type]);
+            $('#selectedCity').html(currCity);
+    }
 
 								function setAreaType(type){
 									$('#BOUNDARY').prop('class', "btn btn-theme-inverse").change();
@@ -784,18 +784,22 @@ function displayImages(){
             navigator.geolocation.getCurrentPosition(successCallback, errorCallback_highAccuracy, {maximumAge:10000, timeout:5000, enableHighAccuracy: true});
         }
 
-	function successCallback(position){
+    function successCallback(position){
       latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 			//latLng = new google.maps.LatLng(51.054926, -114.083888);
 			//latLng = activeSites[0].postion;
 			//displays the marker on the map
-	    currentPosMarker = new google.maps.Marker({
-	      position: latLng,
-	      map: map,
-	      title: 'Hello World!',
-	      icon: icons.self.icon,
-	      animation: google.maps.Animation.DROP
-	    });
+	    if(currentPosMarker) {
+		currentPosMarker.position = latLng;
+            }else{
+            currentPosMarker = new google.maps.Marker({
+              position: latLng,
+              map: map,
+              title: 'Mark',
+              icon: icons.self.icon,
+              animation: google.maps.Animation.DROP
+            });
+                }
 	    siteFence();
 	}
 
@@ -819,13 +823,6 @@ function displayImages(){
 	function forcePos(){
 		shareLocation();
 	}
-
-	//CUSTOM CONTROL//////////////////////////////////////////////////////////////
-	function createCustomControl(){
-		console.log("creating custom control");
-
-	}
-	//////////////////////////////////////////////////////////////////////////////
 
   function calculateAndDisplayRoute(Where) {
       directionsService.route({

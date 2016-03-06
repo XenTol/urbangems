@@ -631,6 +631,16 @@
 										parsePolyKML(map, zoom);
                 };
 
+								//"dummySetKML(datafiles.AIRDRIE.QUADRANT)"
+								//Dummy function to
+								function dummySetKML(KMLfilename) {
+									console.log(map.features);
+									filename = datasets + KMLfilename;
+									console.log(filename);
+									removeAll();
+									parsePolyKML(map, map.getZoom())
+								}
+
 								function parsePolyKML(map, zoom) {
 									geoXml = new geoXML3.parser({
 											map: map,

@@ -72,9 +72,10 @@
 											<em><strong>Hi</strong>, User </em> <i class="dropdown-icon fa fa-angle-down"></i>
 										</a>
 										<ul class="dropdown-menu pull-right icon-right arrow">
-												<li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+												<!--<li><a href="#"><i class="fa fa-user"></i> Profile</a></li>-->
 												<li class="divider"></li>
-												<li><a href="#"><i class="fa fa-sign-out"></i> Signout </a></li>
+												<!--change-->
+												<li><a href="index.html"><i class="fa fa-sign-out"></i> Signout </a></li>
 										</ul>
 										<!-- //dropdown-menu-->
 								</li>
@@ -458,6 +459,7 @@
 		<nav id="menu" data-search="close">
 				<ul>
 						<li ><span><a href="#" data-toggle="modal" data-target="#md-normal"><i class="icon  fa fa-laptop"></i> Dashboard</a></span>
+							<li><span><a href="Leaderboard.html"><i class="icon fa fa-trophy"></i> Leaderboard</a></span></li>
 						</li>
 				</ul>
 		</nav>
@@ -673,7 +675,7 @@ function displayImages(){
 										directionsDisplay.setOptions( {suppressMarkers: true});
 
 										parsePolyKML(map, zoom);
-										
+
 										setKMLbyString(currCity, areaType);
                 };
 

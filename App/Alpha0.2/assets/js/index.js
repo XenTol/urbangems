@@ -48,7 +48,7 @@ var app = {
         //console.log('Received Event: ' + id);
     },
 	
-	upload: function(displayModal){
+	displayImages: function(displayModal){
 		var localStorageImages = localStorage.getItem('images');
 		var selfieLocation = localStorage.getItem("selfieLocation");
 		var json = JSON.parse(localStorageImages);

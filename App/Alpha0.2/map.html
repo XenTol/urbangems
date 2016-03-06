@@ -1000,9 +1000,10 @@ function displayImages(){
 	}
 
   function RemoveMarkers(area) {
-    	for (var i = 0; i < activeSites.length; i++){
+    	for (var i = activeSites.length-1; i > -1; i--){
         if (google.maps.geometry.poly.containsLocation(activeSites[i].getPosition(), area)){
           activeSites[i].setMap(null);
+          activeSites.splice(i, 1); 
         }
       }
   }

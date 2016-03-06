@@ -48,7 +48,7 @@
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
 												<em id="selectedCity">CALGARY</em> <i class="dropdown-icon fa fa-angle-down"></i>
 											</a>
-											
+
 											<ul id="myDropdown" class="dropdown-menu pull-right icon-right arrow">
 													<li onClick="setKMLbyString('CALGARY', 'BOUNDARY')"><a href="#">Calgary</a></li>
 													<li class="divider"></li>
@@ -67,9 +67,9 @@
 													<li onClick="setKMLbyString('OKOTOKS', 'BOUNDARY')"><a href="#">Okotoks</a></li>
 													<li class="divider"></li>
 													<li onClick="setKMLbyString('T_VALLEY', 'BOUNDARY')"><a href="#">Turner Valley</a></li>
-																										
 
-								
+
+
 											</ul>
 											<!-- //dropdown-menu-->
 									</li>w
@@ -151,14 +151,15 @@
 												<button id="COMMUNITY" class="btn btn-theme-inverse"  onclick="setAreaType('COMMUNITY')">Communities</button>
 											</div>
 												<header class="panel-heading">
-														<h2><strong>Your</strong> Gems </h2>
-														<button onclick="forcePos()">Test</button>
-														<button onclick="displayImages()"></button>
+														<h2><strong>Selected</strong> Gems</h2>
+														<!-- <button onclick="forcePos()">Test</button> -->
+													<h4 id="DestName"><h4>
+														<!-- <button onclick="displayImages()"></button> -->
 												</header>
 												<div class="panel-tools panel-tools-mini color" align="right" data-toolscolor="theme-inverse">
 														<ul>
-																<li><a href="javascript:void(0)" class="btn map-control-min"><i class="fa fa-chevron-down"></i></a></li>
-																<li><a href="javascript:void(0)" class="btn btn-close"><i class="fa fa-times"></i></a></li>
+																<!-- <li><a href="javascript:void(0)" class="btn map-control-min"><i class="fa fa-chevron-down"></i></a></li>
+																<li><a href="javascript:void(0)" class="btn btn-close"><i class="fa fa-times"></i></a></li> -->
 														</ul>
 												</div>
 												<div class="panel-body">
@@ -167,28 +168,30 @@
 																<div id="right-panel"></div>
 																		<div class="cp-slider-wrapper" data-max="21"  data-value="13">
 																				<nav>
-																						<a href="#" class="cp-prev"><i class="fa fa-minus "></i></a>
-																						<a href="#" class="cp-next"><i class="fa fa-plus"></i></a>
+																						<!-- <a href="#" class="cp-prev"><i class="fa fa-minus "></i></a>
+																						<a href="#" class="cp-next"><i class="fa fa-plus"></i></a> -->
 																				</nav>
 																		</div>
 																</div>
 																<!-- //content > row > col-md-3 -->
 																<div class="col-md-2">
-																		<div class="input-icon"> <i class="fa fa-search ico"></i>
-																				<input type="text" class="form-control" id="zoom" name="zoom" placeholder="Zoom Level">
-																		</div>
+																		<!-- <div class="input-icon"> <i class="fa fa-search ico"></i> -->
+																				<p id="descP">Choose a Destination</p>
+																		<!-- </div> -->
 																</div>
 																<!-- //content > row > col-md-2 -->
 																<div class="col-md-4">
 																		<div class="input-icon"> <i class="fa fa-map-marker ico"></i>
-																				<input type="text" class="form-control" id="latLng" name="latLng" placeholder="Geo Location">
+																				<!-- <input type="text" class="form-control" id="latLng" name="latLng" placeholder="Geo Location"> -->
+
 																		</div>
 																</div>
 																<!-- //content > row > col-md-4 -->
 																<div class="col-md-3">
-																		<a class="btn btn-inverse btn-block staticMap"><i class="fa fa-fire"></i> &nbsp;Static Maps</a>
+																		<a  onclick="directionsDisplay.setPanel(document.getElementById('testing'));"class="btn btn-inverse btn-block staticMap"><i class="fa fa-map-signs"></i> &nbsp;Get Directions!</a>
 																</div>
-
+																<div id="testing">
+																</div>
 																<!-- //content > row > col-md-3 -->
 														</div>
 														<!-- //content > row-->
@@ -871,6 +874,8 @@ function displayImages(){
         	marker.addListener('click', function() {
 						removeKML();
 						var contentString = this.title;
+						document.getElementById("descP").innerHTML=this.site.desc;
+						document.getElementById("DestName").innerHTML=this.site.name;
 						var infowindow = new google.maps.InfoWindow({
             content: contentString
           });

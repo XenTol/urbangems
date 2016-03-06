@@ -16,6 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -45,7 +46,7 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
-        console.log('Received Event: ' + id);
+        //console.log('Received Event: ' + id);
     },
 
     takePicture: function() {
@@ -84,8 +85,8 @@ var app = {
             "</a>";
             dropdowntags = dropdowntags + "<img src=" + obj['city_hall'][i]['uri'] + " width=100 height=80 /><label>This is our description!</label>";
         }
-        document.getElementById("pictureslider").innerHTML = tags;
-        document.getElementById("myDropdown").innerHTML = dropdowntags;
+        //document.getElementById("pictureslider").innerHTML = tags;
+        //document.getElementById("myDropdown").innerHTML = dropdowntags;
       },
       function( message ) {
         alert( message );
@@ -97,32 +98,27 @@ var app = {
       });
     },
 
-    getPlaces: function(){
-
-      $.getJSON("..\\places.json", function(potentialJson){
-        //console.log(potentialJson['places'][0]['pic']);
-        var screwit = JSON.stringify(potentialJson);
-        localStorage.setItem("convertThis", screwit);
-      });
-
-      //var obj = JSON.parse('{        "places": [          {            "name": "ContainR Park",            "pic": "places/images/containr.png",            "lat": 51.054926,            "lng": -114.083888          },          {            "name": "Rundle Ruins",            "pic": "places/images/rundle.jpg",            "lat": 51.040697,            "lng": -114.0488          },          {            "name": "Bow Passage Overlook",            "pic": "places/images/bowRiver.jpg",            "lat": 51.042189,            "lng": -114.017919          },          {            "name": "Sun Engraving in Nose Hill",            "pic": "places/images/sunRock.jpg",            "lat": 51.11223,            "lng": -114.0951          },          {            "name": "Chinese Cultural Center",            "pic": "places/images/center.jpg",            "lat": 51.051398,            "lng": -114.065109          },          {            "name": "Peace Bridge",            "pic": "places/images/peace.jpg",            "lat": 51.054232,            "lng": -114.079332          },      	{            "name": "Gwacheon Park, Totem Poles",            "pic": "places/images/totem.jpg",            "lat": 51.279940,            "lng": -114.009806          },      	{            "name": "Lake Agnes Tea House",            "pic": "places/images/teaHouse.jpg",            "lat": 51.416254,            "lng": -116.244090          },      	{            "name": "Statue at the Whyte Museum",            "pic": "places/images/bear.jpg",            "lat": 51.175111,            "lng": -115.572727          },      	{            "name": "Glacial Erratic",            "pic": "places/images/bear.jpg",            "lat": 50.705876,            "lng": -114.076577          }        ]      }');
-
-      //var obj = JSON.parse(localStorage.getItem("convertThis"));
-      var table = "";
-      var counter = Object.keys(obj['places']).length;
-
-      for(i = 0; i < counter; i++){
-        table = table + "<a href='#'><img src='" + obj['places'][i]['pic'] + "' alt='UPLOAD IMAGE' /> " + obj['places'][i]['pic'] + "</a>";
-      }
-
-      document.getElementById("myDropdown").innerHTML = table;
-      //document.getElementById("myDropdown").classList.toggle("show");
-    },
-
 
     /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
   myFunction: function() {
     document.getElementById("myDropdown").classList.toggle("show");
-}
+  },
+
+  getPlaces: function(){
+      $.getJSON("places.json", function(potentialJson){
+
+      var screwit = JSON.stringify(potentialJson);
+
+      localStorage.setItem("convertThis", screwit);
+    });
+
+    var obj = JSON.parse(localStorage.getItem("convertThis"));
+    var table = "";
+
+    for(i = 0; i < counter; i++){
+      table = table + "<table><tr><td><img src='" + obj['places'][i]['pic'] + "' alt='Upload image' /></td><td>" + obj['places'][i]['name'] + "</td></tr></table>";
+    }
+    document.getElementById("myDropdown").innerHTML = table;
+  }
 };

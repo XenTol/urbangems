@@ -32,12 +32,12 @@
 		//////////////////////////////////////////////////////////////////////
 		-->
 		<div id="header">
-		
+
 				<div class="logo-area clearfix">
 						<a href="#" class="logo"></a>
 				</div>
 				<!-- //logo-area-->
-				
+
 				<div class="tools-bar">
 						<ul class="nav navbar-nav nav-main-xs">
 								<li><a href="#" class="icon-toolsbar nav-mini"><i class="fa fa-bars"></i></a></li>
@@ -67,10 +67,10 @@
 						</ul>
 				</div>
 				<!-- //tools-bar-->
-				
+
 		</div>
 		<!-- //header-->
-		
+
 		<!--
 		/////////////////////////////////////////////////////////////////////////
 		//////////     SLIDE LEFT CONTENT     //////////
@@ -78,13 +78,13 @@
 		-->
 		<div id="nav">
 				<div id="nav-scroll">
-						
+
 				</div>
 				<!-- //nav-scroller-->
 		</div>
 		<!-- //nav-->
-		
-		
+
+
 		<!--
 		/////////////////////////////////////////////////////////////////////////
 		//////////     TOP SEARCH CONTENT     ///////
@@ -103,17 +103,17 @@
 			</form>
 		</div>
 		<!-- //widget-top-search-->
-		
-		
+
+
 		<!--
 		/////////////////////////////////////////////////////////////////////////
 		//////////     MAIN SHOW CONTENT     //////////
 		//////////////////////////////////////////////////////////////////////
 		-->
 		<div id="main" style="overflow:hidden">
-		
+
 				<div id="Gmap"></div>
-				
+
 				<div id="mapControl">
 										<section class="panel">
 												<header class="panel-heading">
@@ -136,7 +136,7 @@
 																				</nav>
 																		</div>
 																</div>
-																<!-- //content > row > col-md-3 -->	
+																<!-- //content > row > col-md-3 -->
 																<div class="col-md-2">
 																		<div class="input-icon"> <i class="fa fa-search ico"></i>
 																				<input type="text" class="form-control" id="zoom" name="zoom" placeholder="Zoom Level">
@@ -157,12 +157,12 @@
 														<!-- //content > row-->
 												</div>
 										</section>
-				</div>	
+				</div>
 				<!-- //mapControl-->
 		</div>
 		<!-- //main-->
-		
-		
+
+
 		<!--
 		///////////////////////////////////////////////////////////////////
 		//////////     MODAL MAP STATIC     ////////
@@ -189,7 +189,7 @@
 				</div>
 				<!-- //modal-body-->
 		</div>
-		<!-- //modal-->		
+		<!-- //modal-->
 		<!--
 		///////////////////////////////////////////////////////////////////
 		//////////     MODAL MESSAGES     //////////
@@ -289,8 +289,8 @@
 				<!-- //modal-body-->
 		</div>
 		<!-- //modal-->
-		
-		        
+
+
 		<!--
 		//////////////////////////////////////////////////////////////
 		//////////     MODAL NORMAL    //////////
@@ -305,16 +305,16 @@
 				<div class="modal-body" style="text-align:center">
 					<h1><strong>SELFIE!</strong></h1>
 									<br>
-				
-					<button type="button" class="btn btn-theme-inverse btn-block" style="min-height:100px"><i class="fa fa-camera fa-4x"></i></button>
+
+					<button type="button" onclick="app.takePicture();" class="btn btn-theme-inverse btn-block" style="min-height:100px"><i class="fa fa-camera fa-4x"></i></button>
 
 				</div>
 				<!-- //modal-body-->
 		</div>
 		<!-- //modal-->
-	
 
-		
+
+
 		<!--
 		//////////////////////////////////////////////////////////////////////////
 		//////////     MODAL NOTIFICATION     //////////
@@ -421,9 +421,9 @@
 				<!-- //modal-body-->
 		</div>
 		<!-- //modal-->
-		
-		
-		
+
+
+
 		<!--
 		//////////////////////////////////////////////////////////////
 		//////////     LEFT NAV MENU     //////////
@@ -436,8 +436,8 @@
 				</ul>
 		</nav>
 		<!-- //nav left menu-->
-		
-		
+
+
 </div>
 <!-- //wrapper-->
 
@@ -447,7 +447,7 @@
 //////////     JAVASCRIPT  LIBRARY     //////////
 /////////////////////////////////////////////////////////////////////
 -->
-		
+
 <!-- Jquery Library -->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.ui.min.js"></script>
@@ -465,6 +465,8 @@
 <script type="text/javascript" src="assets/plugins/pluginsForBS/pluginsForBS.js"></script>
 <script type="text/javascript" src="assets/plugins/miscellaneous/miscellaneous.js"></script>
 <script type="text/javascript" src="assets/js/caplet.custom.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript">app.initialize();</script>
 
 <script type="text/javascript">
                 var geoXml = null;

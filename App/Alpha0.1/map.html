@@ -627,7 +627,6 @@
 										directionsDisplay.setMap(map);
 										directionsDisplay.setOptions( {suppressMarkers: true});
 
-
 										parsePolyKML(map, zoom);
                 };
 
@@ -737,15 +736,17 @@
 	        var contentString = sites[i].name;
 	        console.log(contentString);
 	        var marker = new google.maps.Marker({
+						site: sites[i],
 	          position: pos,
 	          map: map,
-	          title: sites[i].name,
+	          title: "",
 	          icon: icons.site.icon,
 	          animation: google.maps.Animation.DROP
 	        });
-        marker.addListener('click', function() {
-					var contentString = this.title;
-					var infowindow = new google.maps.InfoWindow({
+					marker.title = marker.site.name;
+        	marker.addListener('click', function() {
+						var contentString = this.title;
+						var infowindow = new google.maps.InfoWindow({
             content: contentString
           });
           infowindow.open(map, this);

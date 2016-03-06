@@ -50,14 +50,18 @@ var app = {
     },
 
     takePicture: function() {
-      navigator.camera.getPicture( function( imageURI ) {
-        alert( imageURI );
-        var newData;
-		var obj = JSON.parse(localStorage.getItem("places"));
-		//newData = data[localStorage.getItem("selfieLocation")].push({"pic":imageURI});
-        alert("Added Image to array");
-
-
+    navigator.camera.getPicture( function( imageURI ) {
+    alert( imageURI );
+	var localStoragePlaces = localStorage.getItem('places');
+	if (typeof localStoragePlaces === 'undefined' || localStoragePlaces === null){
+	$.getJSON( "assets/json/places.json", function( data ) {
+	localStorage.setItem("places", JSON.stringify(data));
+	});
+	}
+	var obj = JSON.parse(localStorage.getItem("places"));
+	obj[localStorage.getItem("selfieLocation")].push({"pic":imageURI});
+	var newData = JSON.stringify(obj);
+    alert("Added Image to array");
         //document.getElementById("pictureslider").innerHTML = tags;
         //document.getElementById("myDropdown").innerHTML = dropdowntags;
       },

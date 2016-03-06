@@ -481,6 +481,15 @@
 
 
 <script type="text/javascript">
+var localStoragePlaces = localStorage.getItem('places');
+if (typeof localStoragePlaces === 'undefined' || localStoragePlaces === null){
+$.getJSON( "assets/json/places.json", function( data ) {
+	localStorage.setItem("places", JSON.stringify(data));
+});
+}
+
+
+
 								var directionsService = new google.maps.DirectionsService;
 								var directionsDisplay = new google.maps.DirectionsRenderer;
 								var currentPosMarker = null;
@@ -721,7 +730,8 @@
 		for(var i = 0; i < activeSites.length; i++){
 				var dist = google.maps.geometry.spherical.computeDistanceBetween (currentPosMarker.position, activeSites[i].position);
 				if( dist < 25){
-					//selfie function needs to go here
+				    //selfie function needs to go here
+				    localStorage.setItem("selfieLocation", activeSites[i].site.id);
 					$('#md-normal').modal('show');
 				}
 		}
@@ -775,7 +785,7 @@
     }
 	}
 
-  function RemoveMakers(area) {
+  function RemoveMarkers(area) {
     	for (var i = 0; i < activeSites.length; i++){
         if (google.maps.geometry.poly.containsLocation(activeSites[i].getPosition(), area)){
           activeSites[i].setMap(null);
@@ -802,7 +812,7 @@
           if(PolyArr[i].title == poly.title){
             PolyArr.splice(i,1);
             poly.setOptions(normalOptions);
-            RemoveMakers(poly);
+            RemoveMarkers(poly);
             return;
           }
         }

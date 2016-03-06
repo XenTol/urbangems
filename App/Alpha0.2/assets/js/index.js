@@ -61,6 +61,7 @@ var app = {
 	var obj = JSON.parse(localStorage.getItem("images"));
 	obj[localStorage.getItem("selfieLocation")].push({"pic":imageURI});
 	var newData = JSON.stringify(obj);
+	localStorage.setItem("images", newData);
     alert("Added Image to array");
         //document.getElementById("pictureslider").innerHTML = tags;
         //document.getElementById("myDropdown").innerHTML = dropdowntags;

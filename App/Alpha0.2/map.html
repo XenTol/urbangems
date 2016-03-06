@@ -629,7 +629,7 @@ function reloadImages(){
 		});
 }
 
-function displayImages(){
+function displayImages(displayModal){
 		reloadImages();
 		var localStorageImages = localStorage.getItem('images');
 		var selfieLocation = localStorage.getItem("selfieLocation");
@@ -639,7 +639,9 @@ function displayImages(){
 		HTML += '<img src="'+val.pic+'" />'
 		});
 		$("#sliderImgs").html(HTML);
+		if(displayModal == true){
 		$('#md-normal').modal('show');
+		}
 }
 
 
@@ -952,7 +954,7 @@ function displayImages(){
 				    //selfie function needs to go here
                    //console.log("Distance = " + dist); 
 				    localStorage.setItem("selfieLocation", activeSites[i].site.id);
-					displayImages();
+					displayImages(true);
 				}
 		}
   }

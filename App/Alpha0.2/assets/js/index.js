@@ -61,7 +61,7 @@ var app = {
 	obj[localStorage.getItem("selfieLocation")].push({"pic":imageURI});
 	var newData = JSON.stringify(obj);
 	localStorage.setItem("images", newData);
-    alert("Added Image to array");
+    displayImages(false);
         //document.getElementById("pictureslider").innerHTML = tags;
         //document.getElementById("myDropdown").innerHTML = dropdowntags;
       },

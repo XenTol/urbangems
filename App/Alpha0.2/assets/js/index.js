@@ -52,13 +52,13 @@ var app = {
     takePicture: function() {
     navigator.camera.getPicture( function( imageURI ) {
     alert( imageURI );
-	var localStoragePlaces = localStorage.getItem('places');
-	if (typeof localStoragePlaces === 'undefined' || localStoragePlaces === null){
-	$.getJSON( "assets/json/places.json", function( data ) {
-	localStorage.setItem("places", JSON.stringify(data));
+	var localStorageImages = localStorage.getItem('images');
+	if (typeof localStorageImages === 'undefined' || localStorageImages === null){
+	$.getJSON( "assets/json/images.json", function( data ) {
+	localStorage.setItem("images", JSON.stringify(data));
 	});
 	}
-	var obj = JSON.parse(localStorage.getItem("places"));
+	var obj = JSON.parse(localStorage.getItem("images"));
 	obj[localStorage.getItem("selfieLocation")].push({"pic":imageURI});
 	var newData = JSON.stringify(obj);
     alert("Added Image to array");

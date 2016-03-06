@@ -729,12 +729,12 @@ function displayImages(){
                 function initialize() {
                     //console.log("getting map");
 										parseJSON();
-                    myLatLng = new google.maps.LatLng(51.054232, -114.079332);
+                    myLatLng = new google.maps.LatLng(51.045890, -114.056830);
                     // these set the initial center, zoom and maptype for the map
                     // if it is not specified in the query string
-                    var lat = 51.054232;
-                    var lng = -114.079332;
-                    var zoom = 18;
+                    var lat = 51.045890;
+                    var lng = -114.0568302;
+                    var zoom = 16;
                     var maptype = google.maps.MapTypeId.ROADMAP;
 
                     var query = location.search.substring(1);
@@ -915,7 +915,7 @@ function displayImages(){
               animation: google.maps.Animation.DROP
             });
                 }
-	    siteFence();
+	    //siteFence();
 	}
 
 
@@ -978,6 +978,7 @@ function displayImages(){
 						document.getElementById("DestName").innerHTML=this.site.name;
 						var infowindow = new google.maps.InfoWindow({
             content: contentString
+            siteFence();
           });
           infowindow.open(map, this);
         	calculateAndDisplayRoute(this.position);
@@ -1069,7 +1070,7 @@ function displayImages(){
   }
 
 	function showAll() {
-      map.fitBounds(geoXmlDoc.bounds);
+      //map.fitBounds(geoXmlDoc.bounds);
       for (var i = 0; i < geoXmlDoc.placemarks.length; i++) {
         var placemark = geoXmlDoc.placemarks[i];
         if (placemark.polygon) placemark.polygon.setMap(map);

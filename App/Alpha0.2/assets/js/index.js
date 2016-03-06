@@ -48,14 +48,7 @@ var app = {
         //console.log('Received Event: ' + id);
     },
 	
-	reload: function(){
-		$.getJSON( "assets/json/images.json", function( data ) {
-		localStorage.setItem("images", JSON.stringify(data));
-		});
-	},
-	
 	upload: function(displayModal){
-		this.reloadImages();
 		var localStorageImages = localStorage.getItem('images');
 		var selfieLocation = localStorage.getItem("selfieLocation");
 		var json = JSON.parse(localStorageImages);

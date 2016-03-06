@@ -117,8 +117,10 @@ toggle between hiding and showing the dropdown content */
     var table = "";
 
     for(i = 0; i < counter; i++){
-      table = table + "<table><tr><td><img src='" + obj['places'][i]['pic'] + "' alt='Upload image' /></td><td>" + obj['places'][i]['name'] + "</td></tr></table>";
+    //  table = table + "<table><tr><td><img src='" + obj['places'][i]['pic'] + "' alt='Upload image' /></td><td>" + obj['places'][i]['name'] + "</td></tr></table>";
+      table = table + "<li><a href="#"><table><tr><td><img src='" + obj['places'][i]['pic'] + "' alt='Upload image' /></td><td>" + obj['places'][i]['name'] + "</td></tr></table></a></li><li class='divider'></li>"
     }
     document.getElementById("myDropdown").innerHTML = table;
+
   }
 };

@@ -35,7 +35,7 @@
             display: inline;
             padding: 0;
             margin: 0;
-            width: 1510px;
+            width: 3500px;
             transition-property: transform;
             transition-duration: 0.5s;
             transition-timing-function: ease-out;
@@ -99,7 +99,7 @@
 
 											</ul>
 											<!-- //dropdown-menu-->
-									</li>w
+									</li>
 								<li><a href="#" class="nav-collapse avatar-header">
 												<img alt="" src="assets/img/avatar.png"  class="circle">
 										</a>
@@ -553,7 +553,7 @@
 <script type="text/javascript">
         var IMG_WIDTH = 460;
         var currentImg = 0;
-        var maxImages = 3;
+        var maxImages = 100;
         var speed = 500;
 
         var imgs;
@@ -617,6 +617,7 @@
 <script type="text/javascript">
 var localStorageImages = localStorage.getItem('images');
 if (typeof localStorageImages === 'undefined' || localStorageImages === null){
+localStorage.setItem("images", " ");
 $.getJSON( "assets/json/images.json", function( data ) {
 	localStorage.setItem("images", JSON.stringify(data));
 });

@@ -58,19 +58,19 @@ var app = {
 		});
 		$("#sliderImgs").html(HTML);
 		if(displayModal == true){
+		alert("display modal");
 		$('#md-normal').modal('show');
 		}
 	},
 
     takePicture: function() {
     navigator.camera.getPicture( function( imageURI ) {
-    alert( imageURI );
 	var localStorageImages = localStorage.getItem('images');
 	var obj = JSON.parse(localStorage.getItem("images"));
 	obj[localStorage.getItem("selfieLocation")].push({"pic":imageURI});
 	var newData = JSON.stringify(obj);
 	localStorage.setItem("images", newData);
-    this.displayImages(false);
+    app.displayImages(false);
         //document.getElementById("pictureslider").innerHTML = tags;
         //document.getElementById("myDropdown").innerHTML = dropdowntags;
       },
